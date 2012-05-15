@@ -1,0 +1,23 @@
+div.box, div.full-nav, div.action-block, div.action, div.tip, div.warning,
+div.download, div.contact, div.info, div.steps, div.code, div.comments,
+div.comment-form, div.activity, div.example, div.quote, div.dialogue, dl.glossary,
+div.references, div.keypoints, div.summary, div.notes, div.feature-block, div.feature-block-link
+{zoom:1;margin-bottom:1em !important;}
+ul.events{margin-left: 0 !important;}
+ul.news h3{margin-top:0 !important;}
+ul.news img{margin-top:1em !important;}
+ul.events p.hsDate{margin-top:1em !important;}
+/* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
+*html.js fieldset.collapsed legend,
+*html.js fieldset.collapsed legend *,
+*html.js fieldset.collapsed table *,
+*html.js fieldset.collapsed div * {
+display: inline !important;
+}
+html.js fieldset div div table,
+html.js fieldset div table{
+display: inline !important;
+}
+#site-header .creative .quoteMarkStart {top:0.02em;display:block;}
+#site-header .creative .quoteMarkEnd {top:-0.06em;}
+#site-header .creative .masthead-quote blockquote{line-height: 1.1em;}

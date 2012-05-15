@@ -1,0 +1,42 @@
+div.box, div.full-nav, div.action-block, div.action, div.tip, div.warning,
+div.download, div.contact, div.info, div.steps, div.code, div.comments,
+div.comment-form, div.activity, div.example, div.quote, div.dialogue, dl.glossary,
+div.references, div.keypoints, div.summary, div.notes, div.feature-block, div.feature-block-link
+{zoom:1;margin-bottom:1em !important;}
+div.feature-block, div#site-header ul.sections {background-image:none !importrant;}
+div.context-nav li strong, div.full-nav li strong {font-weight: normal !important;}
+div.context-nav li strong{width: 94.8% !important;}
+div.context-nav,
+div.full-nav,
+div.context-nav ul,
+div.full-nav ul,
+div.context-nav ul li,
+div.full-nav ul li,
+div.context-nav li a,
+div.context-nav li strong,
+div.full-nav li strong {zoom: 1;}
+div.c1of2, div.c2of2 {
+width:48%;
+}
+div.c2of3{margin: auto auto auto 4%}
+div.c3of3{margin: auto auto auto 2%}
+div.c1of3, div.c2of3, div.c3of3 {
+width:28%;
+}
+.c1of4, .c2of4, .c3of4, .c4of4 {
+width:21.5%;
+}
+/* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
+*html.js fieldset.collapsed legend,
+*html.js fieldset.collapsed legend *,
+*html.js fieldset.collapsed table *,
+*html.js fieldset.collapsed div * {
+display: inline !important;
+}
+html.js fieldset div div table,
+html.js fieldset div table{
+display: inline !important;
+}
+#site-header .creative .quoteMarkStart {top:0.02em;display:block;}
+#site-header .creative .quoteMarkEnd {top:-0.06em;}
+#site-header .creative .masthead-quote blockquote{line-height: 1.1em;}
