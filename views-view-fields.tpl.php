@@ -1,7 +1,6 @@
 <?php
-// $Id: views-view-fields.tpl,v 3.0 2010/10/25 09:00:00 laustin and PConolly IPP $
 /**
- * @file views-view-fields.tpl.php
+ * @file
  * Default simple view template to all the fields as a row.
  *
  * - $view: The view in use.
@@ -13,35 +12,23 @@
  *     var_export to dump this object, as it can't handle the recursion.
  *   - $field->inline: Whether or not the field should be inline.
  *   - $field->inline_html: either div or span based on the above flag.
+ *   - $field->wrapper_prefix: A complete wrapper containing the inline_html to use.
+ *   - $field->wrapper_suffix: The closing tag for the wrapper.
  *   - $field->separator: an optional separator that may appear before a field.
+ *   - $field->label: The wrap label text to use.
+ *   - $field->label_html: The full HTML of the label to use including
+ *     configured element type.
  * - $row: The raw result object from the query, with all data it fetched.
  *
  * @ingroup views_templates
  */
 ?>
-<?php foreach ($fields as $id => $field): ?>
-  <?php
-    $fname=$field->class;
-	if (($fname == "nid" || $fname == "nid-1") && empty($nid)):
-			$nid=$field->content;
-	else:
-    if (!empty($field->separator)): ?>
-        <?php print $field->separator; ?>
-    <?php endif; ?>
-    <<?php print $field->inline_html;?> class="views-field-<?php print $field->class; ?>">
-    <?php if ($field->label): ?>
-        <label class="views-label-<?php print $field->class; ?>">
-        <?php print $field->label; ?>:
-        </label>
-    <?php endif; ?>
-        <?php
-        // $field->element_type is either SPAN or DIV depending upon whether or not
-        // the field is a 'block' element type or 'inline' element type.
-        ?>
-        <<?php print $field->element_type; ?> class="field-content">
-	  	    <?php 
-			print (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : $field->content) . '</p>'; ?>
-        </<?php print $field->element_type; ?>>
-    </<?php print $field->inline_html;?>>
-    <?php endif;
-endforeach; ?>
+<?php foreach ($fields as $id => $field) {
+	if (!empty($field->separator)) {
+		print $field->separator; 
+	}
+	print $field->wrapper_prefix;
+	print $field->label_html;
+	print $field->content;
+	print $field->wrapper_suffix;
+}

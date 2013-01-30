@@ -1,5 +1,5 @@
 <?php
-// $Id: node.tpl.php,v 3.0 2010/10/25 09:00:00 laustin and PConolly IPP $
+// $Id: node.tpl.php,v 3.1 2012/06/29 09:00:00 laustin (07779 146104) $
 /**
  * @file node.tpl.php
  *

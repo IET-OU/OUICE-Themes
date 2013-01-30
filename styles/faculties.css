@@ -1,0 +1,1576 @@
+/*Faculty of Arts - colour palette
+Primary colour
+OU Red #C10031
+
+Secondary support colour
+OU Dark Red #630031
+
+Optional tertiary colour
+OU Pink #E80074
+
+Passive colours 
+OU - Mid Grey - #B0B0B0
+OU Dark Grey - #8C8C8C*/
+
+body.ou-arts div.creative.go3 {
+background: url("img/arts-creative.png") no-repeat top right;
+}
+/* 100% of tertiary #E80074 colour*/
+body.ou-arts p#site-title a, body.ou-arts blockquote.pullquote1, body.ou-arts blockquote.pullquote2, /*body.ou-arts blockquote p,*/ body.ou-arts h1, body.ou-arts div.box h2, body.ou-arts ul.news h2 a {
+color: #E80074;
+}
+/* 12% of secondary #630031 colour*/
+body.ou-arts table, body.ou-arts tr, body.ou-arts th, body.ou-arts td, body.ou-arts legend, body.ou-arts fieldset, body.ou-arts img.border, body.ou-arts  ul.news img, body.ou-arts #region2 ul.news img {
+border: 1px solid #ece0e6;
+}
+body.ou-arts ul.news li {
+border-top: 1px solid #ece0e6;
+border-bottom: none;
+}
+/* 6% of secondary #630031 colour*/
+body.ou-arts th, body.ou-arts .ou-odd, body.ou-arts fieldset {
+background-color: #f6f0f3;
+}
+/* 4% of secondary #630031 colour*/
+body.ou-arts div.box, body.ou-arts div.action-block, body.ou-arts div.action, body.ou-arts div.download, body.ou-arts div.contact, body.ou-arts div.steps, body.ou-arts div.comments, body.ou-arts div.activity, body.ou-arts div.example, body.ou-arts div.quote, body.ou-arts div.dialogue, body.ou-arts dl.glossary, body.ou-arts div.references, body.ou-arts div.keypoints, body.ou-arts div.summary, body.ou-arts div.notes, body.ou-arts div.feature-block, body.ou-arts div.feature-block-link, body.ou-arts #region2 ul.news.date p.date {
+background-image: url("img/arts.png");
+}
+body.ou-arts div.ou-video, body.ou-arts .slider {
+background-color: #f9f5f7;
+}
+body.ou-arts div.contact, body.ou-arts div.steps, body.ou-arts div.ou-help, body.ou-arts div.action, body.ou-arts div.activity, body.ou-arts div.example, body.ou-arts div.notes, body.ou-arts div.ou-promo, body.ou-arts #region2  ul.news p.more {
+background-color: #f9f5f7;
+}
+/* 10% 20% 22% 12% of secondary #630031 colour*/
+body.ou-arts div.box, body.ou-arts div.action-block, body.ou-arts div.action, body.ou-arts div.download, body.ou-arts div.contact, body.ou-arts div.steps, body.ou-arts div.comments, body.ou-arts div.activity, body.ou-arts div.example, body.ou-arts div.quote, body.ou-arts div.dialogue, body.ou-arts dl.glossary, body.ou-arts div.references, body.ou-arts div.keypoints, body.ou-arts div.summary, body.ou-arts div.notes, body.ou-arts div.feature-block, body.ou-arts div.feature-block-link, body.ou-arts .ou-code, body.ou-arts #region2 ul.news.date p.date {
+border-color: #efe5ea  #e0cdd7 #ddc8d3 #ECE0E6;
+}
+/* 100% of tertiary #E80074 colour*/
+body.ou-arts a img.border:hover, body.ou-arts.nav-thumb:hover {
+border: 1px solid #E80074;
+}
+/* end of Faculty of Arts*/
+/*Law School - colour palette
+
+Primary colour
+OU Dark Green #4B5F4B
+
+Secondary support colour
+OU Turquoise #00B0AC
+
+Optional tertiary colour
+OU Light Green #A4A400
+
+Passive colours
+OU Black #000000
+OU Mid Grey #B0B0B0*/
+body.ou-law div.creative.go3 {
+background: url("img/law-creative.png") no-repeat top right;
+}
+/* 100% of primary #4B5F4B colour */
+body.ou-law p#site-title a, body.ou-law blockquote.pullquote1, body.ou-law blockquote.pullquote2, body.ou-law blockquote p, body.ou-law h1, body.ou-law div.box h2, body.ou-law ul.news h2 a {
+color: #4B5F4B;
+}
+/* 15% of primary #4B5F4B colour*/
+body.ou-law table, body.ou-law tr, body.ou-law th, body.ou-law td, body.ou-law legend, body.ou-law fieldset, body.ou-law img.border, body.ou-law ul.news img, body.ou-law #region2 ul.news img {
+border: 1px solid #e4e7e4;
+}
+body.ou-law ul.news  li {
+border-top: 1px solid #e4e7e4;
+border-bottom: none;
+}
+/* 7% of primary #4B5F4B colour*/
+body.ou-law th, body.ou-law .ou-odd, body.ou-law fieldset {
+background-color: #F2F4F2;
+}
+body.ou-law div.ou-video, body.ou-law.slider {
+background-color: #F2F4F2;
+}
+/* 4% of primary #4B5F4B colour*/
+body.ou-law div.box, body.ou-law div.action-block, body.ou-law div.action, body.ou-law div.download, body.ou-law div.contact, body.ou-law div.steps, body.ou-law div.comments, body.ou-law div.activity, body.ou-law div.example, body.ou-law div.quote, body.ou-law div.dialogue, body.ou-law dl.glossary, body.ou-law div.references, body.ou-law div.keypoints, body.ou-law div.summary, body.ou-law div.notes, body.ou-law div.feature-block, body.ou-law div.feature-block-link, body.ou-law #region2 ul.news.date p.date {
+background-image: url("img/law.png");
+}
+body.ou-law div.contact, body.ou-law div.steps, body.ou-law div.ou-help, body.ou-law div.action, body.ou-law div.activity, body.ou-law div.example, body.ou-law div.notes, body.ou-law div.ou-promo, body.ou-law #region2 ul.news p.more {
+background-color: #f8f9f8;
+}
+/* 15% 25% 30% 14% of primary #4B5F4B colour*/
+body.ou-law div.box, body.ou-law div.action-block, body.ou-law div.action, body.ou-law div.download, body.ou-law div.contact, body.ou-law div.steps, body.ou-law div.comments, body.ou-law div.activity, body.ou-law div.example, body.ou-law div.quote, body.ou-law div.dialogue, body.ou-law dl.glossary, body.ou-law div.references, body.ou-law div.keypoints, body.ou-law div.summary, body.ou-law div.notes, body.ou-law div.feature-block, body.ou-law div.feature-block-link, body.ou-law.ou-code, body.ou-law #region2 ul.news.date p.date {
+border-color: #E4E7E4 #D2D7D2 #C9CFC9 #E4E7E4;
+}
+/* 100% of tertiary #A4A400 colour*/
+body.ou-law a img.border:hover, body.ou-law .nav-thumb:hover {
+border: 1px solid #A4A400;
+}
+/* end of Law School*/
+/*Faculty of Education and language Studies - colour palette
+
+Primary colour
+OU Orange #E65B00
+
+Secondary support colour
+OU Yellow #F4C400
+
+tertiary colour
+OU Dark Red #630031
+
+Passive colours
+OU Dark Grey - #8C8C8C
+OU Light Grey - #D4D4D4*/
+body.ou-fels div.creative.go3 {
+background: url("img/els-creative.png") no-repeat top right;
+}
+/* 100% of tertiary #630031 colour*/
+body.ou-fels p#site-title a, body.ou-fels blockquote.pullquote1, body.ou-fels blockquote.pullquote2, body.ou-fels blockquote p, body.ou-fels h1, body.ou-fels div.box h2, body.ou-fels ul.news h2 a {
+color: #630031;
+}
+/* 35% of secondary #F4C400 colour*/
+body.ou-fels table, body.ou-fels tr, body.ou-fels th, body.ou-fels td, body.ou-fels legend, body.ou-fels fieldset {
+border: 1px solid #fbeaa6;
+}
+/* 15% of tertiary #630031 colour*/
+body.ou-fels ul.news li {
+border-top: 1px solid #e8d9e0;
+border-bottom: none;
+}
+body.ou-fels img.border, body.ou-fels ul.news img, body.ou-fels #region2 ul.news img {
+border: 1px solid #e8d9e0;
+}
+/* 16% of secondary #F4C400 colour*/
+body.ou-fels th, body.ou-fels .ou-odd, body.ou-fels fieldset {
+background-color: #fdf6d6;
+}
+body.ou-fels div.ou-video, body.ou-fels.slider {
+background-color: #fdf6d6;
+}
+/* 6% of tertiary #630031 colour*/
+body.ou-fels div.box, body.ou-fels div.action-block, body.ou-fels div.action, body.ou-fels div.download, body.ou-fels div.contact, body.ou-fels div.steps, body.ou-fels div.comments, body.ou-fels div.activity, body.ou-fels div.example, body.ou-fels div.quote, body.ou-fels div.dialogue, body.ou-fels dl.glossary, body.ou-fels div.references, body.ou-fels div.keypoints, body.ou-fels div.summary, body.ou-fels div.notes, body.ou-fels div.feature-block, body.ou-fels div.ou  -feature-block-link, body.ou-fels #region2 ul.news.date p.date {
+background-image: url("img/els.png");
+}
+/*3% of tertiary #630031 colour*/
+body.ou-fels div.contact, body.ou-fels div.steps, body.ou-fels div.ou-help, body.ou-fels div.action, body.ou-fels div.activity, body.ou-fels div.example, body.ou-fels div.notes, body.ou-fels div.ou-promo, body.ou-fels #region2 ul.news p.more {
+background-color: #faf7f9;
+}
+/* 12% 19% 22% 10% of tertiary #630031 colour*/
+body.ou-fels div.box, body.ou-fels div.action-block, body.ou-fels div.action, body.ou-fels div.download, body.ou-fels div.contact, body.ou-fels div.steps, body.ou-fels div.comments, body.ou-fels div.activity, body.ou-fels div.example, body.ou-fels div.quote, body.ou-fels div.dialogue, body.ou-fels dl.glossary, body.ou-fels div.references, body.ou-fels div.keypoints, body.ou-fels div.summary, body.ou-fels div.notes, body.ou-fels div.feature-block, body.ou-fels div.feature-block-link, body.ou-fels.ou-code, body.ou-fels #region2 ul.news.date p.date {
+border-color:#ece0e6 #e2cfd8 #ddc7d2 #efe5ea;
+}
+/* 100% of tertiary #630031 colour*/
+body.ou-fels a img.border:hover, body.ou-fels.nav-thumb:hover {
+border: 1px solid #630031;
+}
+/* end of Faculty of Education and Language Studies*/
+/*Faculty of Health and Social Care - colour palette
+
+Primary colour
+OU Violet #4E247B
+
+Secondary support colour
+OU Pink #E80074
+
+Optional tertiary colour
+OU Red #CI0031
+
+Passive colours
+OU Mid Grey #B0B0B0
+OU Dark Grey #8C8C8C
+*/
+body.ou-hsc div.creative.go3 {
+background:url("img/hsc-bg.png") repeat-x bottom right;
+/*background:url("img/hsc-creative.png") no-repeat bottom right;*/
+}
+/* 100% of primary #4E247B colour*/
+body.ou-hsc p#site-title a, body.ou-hsc blockquote.pullquote1, body.ou-hsc blockquote.pullquote2, body.ou-hsc blockquote p, body.ou-hsc h1, body.ou-hsc div.box h2, body.ou-hsc ul.news h2 a {
+color: #4E247B;
+}
+body.ou-hsc p.Button {
+margin: 1em;
+}
+body.ou-hsc p.Button a, body.ou-hsc p.bigButton a {
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+color: #ffffff;
+background: rgb(131,101,162);/* old browsers */
+background: -moz-linear-gradient(top, rgba(131, 101, 162, 1) 0%, rgba(95, 57, 136, 1) 100%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(131, 101, 162, 1)), color-stop(100%, rgba(95, 57, 136,  1))); /* webkit */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8365A2', endColorstr='#5F3988', GradientType=0); /* ie */
+background: -o-linear-gradient(top, rgba(131,101,162,1) 0%,rgba(95,57,136,1) 100%); /* opera */
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+body.ou-hsc p.Button a:hover, body.ou-hsc p.bigButton a:hover {
+background: #4E247B;
+}
+/* 20% of primary #4E247B colour*/
+body.ou-hsc table, body.ou-hsc tr, body.ou-hsc th, body.ou-hsc td, body.ou-hsc legend, body.ou-hsc fieldset, body.ou-hsc img.border, body.ou-hsc ul.news img, body.ou-hsc #region2 ul.news img {
+border: 1px solid #dcd3e5;
+}
+/* 15% of primary #4E247B colour*/
+body.ou-hsc ul.news li {
+border-top: 1px solid #e5deeb;
+border-bottom: none;
+}
+/* 8% of primary #4E247B colour*/
+body.ou-hsc th, body.ou-hsc .ou-odd, body.ou-hsc fieldset {
+background-color: #f1eef5;
+}
+body.ou-hsc div.box, body.ou-hsc div.action-block, body.ou-hsc div.action, body.ou-hsc div.download, body.ou-hsc div.contact, body.ou-hsc div.steps, body.ou-hsc div.comments, body.ou-hsc div.activity, body.ou-hsc div.example, body.ou-hsc div.quote, body.ou-hsc div.dialogue, body.ou-hsc dl.glossary, body.ou-hsc div.references, body.ou-hsc div.keypoints, body.ou-hsc div.summary, body.ou-hsc div.notes, body.ou-hsc div.feature-block, body.ou-hsc div.feature-block-link, body.ou-hsc #region2 ul.news.date p.date {
+background-image: url("img/hsc.png");
+}
+body.ou-hsc div.ou-video, body.ou-hsc.slider {
+background-color: #f1eef5;
+}
+/* 4% of primary #4E247B colour*/
+body.ou-hsc div.contact, body.ou-hsc div.steps, body.ou-hsc div.ou-help, body.ou-hsc div.action, body.ou-hsc div.activity, body.ou-hsc div.o u-example, body.ou-hsc div.notes, body.ou-hsc div.ou-promo, body.ou-hsc #region2 ul.news p.more {
+background-color: #f8f6fa;
+}
+/* 15% 25% 30% 12% of primary #4E247B colour*/
+body.ou-hsc div.box, body.ou-hsc div.action-block, body.ou-hsc div.action, body.ou-hsc div.download, body.ou-hsc div.contact, body.ou-hsc div.steps, body.ou-hsc div.comments, body.ou-hsc div.activity, body.ou-hsc div.example, body.ou-hsc div.quote, body.ou-hsc div.dialogue, body.ou-hsc dl.glossary, body.ou-hsc div.references, body.ou-hsc div.keypoints, body.ou-hsc div.summary, body.ou-hsc div.notes, body.ou-hsc div.feature-block, body.hsc div.feature-block-link, body.ou-hsc.ou-code, body.ou-hsc #region2 ul.news.date p.date {
+border-color:#e5deeb #d3c8de #cabdd7 #e9e4ef;
+}
+/* 100% of Secondary #E80074 colour*/
+body.ou-hsc a img.border:hover, body.ou-hsc.nav-thumb:hover {
+border: 1px solid #E80074;
+}
+/*experimental*/
+/*67% of primary*/
+body.ou-hsc div.feature-block.dark {
+background-color: #8568A4;
+border-color: #8568A4;
+background-image: none;
+}
+body.ou-hsc div.feature-block.dark H1, body.ou-hsc div.feature-block.dark H2, body.ou-hsc div.feature-block.dark H3, body.ou-hsc div.feature-block.dark H4, body.ou-hsc div.feature-block.dark p {
+color: #fff;
+}
+/*8% of primary*/
+body.ou-hsc div.feature-block.light {
+background-color: #f1eef5;
+background-image: none;
+}
+body.ou-hsc div.action-block li a, body.ou-hsc div.box a.action {
+background-image: url("img/hsc-arrow-off.png");
+}
+body.ou-hsc div.action-block li a:hover, body.ou-hsc div.box a.action:hover {
+background-image: ur  l("img/hsc-arrow-on.png");
+}
+body.ou-hsc div.action-block.light li a, body.ou-hsc div.box.light a.action {
+background-image: url("img/hsc-arrow-off.png");
+}
+body.ou-hsc div.action-block.light li a:hover, body.ou-hsc div.box.light a.action:hover {
+background-image: url("img/hsc-arrow-on.png");
+}
+body.ou-hsc div.action-block.light, body.ou-hsc div.box.light {
+background: #F1EEF5;
+}
+body.ou-hsc div.action-block.dark li a, body.ou-hsc div.box.dark a.action {
+background-image: url("img/hsc-dark-arrow-off.png");
+}
+body.ou-hsc div.action-block.dark li a:hover, body.ou-hsc div.box.dark a.action:hover {
+background-image: url("img/hsc-dark-arrow-on.png");
+}
+body.ou-hsc div.action-block.dark, body.ou-hsc div.box.dark {
+background: #8568a4;
+border-color: #8568A4;
+}
+body.ou-hsc div.action-block.dark a, body.ou-hsc div.box.dark a.action {
+color: #fff;
+}
+body.ou-hsc div.action-block.dark a:hover, body.ou-hsc div.box.dark a.action:hover {
+color: #000;
+}
+
+/*slideshow*/
+
+
+/*end of slideshow*/
+
+/* end of Faculty of Health and Social Care*/
+
+/*Faculty of Mathematics, Computing and Technology - colour palette
+
+Primary colour
+OU Light Green #A4A400
+
+Secondary support colour
+OU Beige #D1D1A5
+
+Optional tertiary colour
+OU DarkGreen #4B5F4B
+
+Passive colours
+OU Dark Grey #8C8C8C
+OU Light Grey #D4D4D4
+*/
+body.ou-mct div.creative.go3 {
+background: url("img/mct-creative.png") no-repeat top right;
+}
+/*100% of tertiary #4B5F4B colour*/
+body.ou-mct p#site-title a, body.ou-mct blockquote.pullquote1, body.ou-mct blockquote.pullquote2, body.ou-mct blockquote p, body.ou-mct h1, body.ou-mct div.box h2, body.ou-mct ul.news h2 a {
+color: #4B5F4B;
+}
+/* 23% of primary #A4A400 colour*/
+body.ou-mct table, body.ou-mct tr, body.ou-mct th, body.ou-mct td, body.ou-mct legend, body.ou-mct fieldset, body.ou-mct img.border, body.ou-mct ul.news img, body.ou-mct #region2 ul.news img {
+border: 1px solid #eaeac4;
+}
+/* 10% of primary #A4A400 colour*/
+body.ou-mct th, body.ou-mct .ou-odd, body.ou-mct fieldset {
+background-color: #f6f6e5;
+}
+body.ou-mct div.ou-video, body.ou-mct.slider {
+background-color: #f6f6e5;
+}
+/* 7% of tertiary #4B5F4B colour*/
+body.ou-mct div.box, body.ou-mct div.action-block, body.ou-mct div.action, body.ou-mct div.download, body.ou-mct div.contact, body.ou-mct div.steps, body.ou-mct div.comments, body.ou-mct div.activity, body.ou-mct div.example, body.ou-mct div.quote, body.ou-mct div.dialogue, body.ou-mct dl.glossary, body.ou-mct div.references, body.ou-mct div.keypoints, body.ou-mct div.summary, body.ou-mct div.notes, body.ou-mct div.feature-block, body.ou-mct div.feature-block-link, body.ou-mct #region2 ul.news.date p.date {
+background-image: url("img/mct.png");
+}
+/* 4% of tertiary #4B5F4B colour*/
+body.ou-mct div.contact, body.ou-mct div.steps, body.ou-mct div.ou-help, body.ou-mct div.action, body.ou-mct div.activity, body.ou-mct div.example, body.ou-mct div.notes, body.ou-mct div.ou-promo, body.ou-mct #region2 ul.news p.more {
+background-color: #f8f9f8;
+}
+/* 14% of tertiary #4B5F4B colour*/
+body.ou-mct ul.news li {
+border-top: 1px solid #e6e8e6;
+border-bottom: none;
+}
+/* 14% 23% 30% 11% of tertiary #4B5F4B colour*/
+body.ou-mct div.box, body.ou-mct div.action-block, body.ou-mct div.action, body.ou-mct div.download, body.ou-mct div.contact, body.ou-mct div.steps, body.ou-mct div.comments, body.ou-mct div.activity, body.ou-mct div.example, body.ou-mct div.quote, body.ou-mct div.dialogue, body.ou-mct dl.glossary, body.ou-mct div.references, body.ou-mct div.keypoints, body.ou-mct div.summary, body.ou-mct div.notes, body.ou-mct div.feature-block, body.ou-mct div.feature-block-link, body.ou-mct.ou-code, body.ou-mct #region2 ul.news.date p.date {
+border-color: #e6e8e6 #d5dad5 #c9cfc9 #ebedeb;
+}
+/* 100% of tertiary #A4A400 colour*/
+body.ou-mct a img.border:hover, body.ou-mct.nav-thumb:hover {
+border: 1px solid #A4A400;
+}
+/* end of Faculty of Mathematics, Computing and Technology*/
+/*Faculty of Science - colour palette
+
+Primary colour
+OU Yellow #F4C400
+
+Secondary support colour
+OU Beige #D1D1A5
+
+Optional tertiary colour
+OU Light Green #A4A400
+
+Passive colours
+OU Black #000000
+OU Light Grey #D4D4D4
+*/
+body.ou-science div.creative.go3 {
+background: url("img/science-creative.png") no-repeat top right;
+}
+/* 100% of passive black #000000 colour*/
+body.ou-science p#site-title a, body.ou-science blockquote.pullquote1, body.ou-science blockquote.pullquote2, body.ou-science blockquote p, body.ou-science h1, body.ou-science div.box h2, body.ou-science ul.news h2 a {
+color: #000000;
+}
+/* 25% of tertiary #A4A400 colour*/
+body.ou-science table, body.ou-science tr, body.ou-science th, body.ou-science td, body.ou-science legend, body.ou-science fieldset, body.ou-science img.border, body.ou-science ul.news img, body.ou-science #region2 ul.news img {
+border: 1px solid #e8e8bf;
+}
+/* 20% of tertiary #A4A400 colour */
+body.ou-science ul.news li {
+border-top: 1px solid #ededcc;
+border-bottom: none;
+}
+/* 8% of tertiary #A4A400 colour*/
+body.ou-science th, body.ou-science .ou-odd, body.ou-science fieldset {
+background-color: #f8f8eb;
+}
+body.ou-science div.ou-video, body.ou-science.slider {
+background-color: #f8f8eb;
+}
+body.ou-science div.box, body.ou-science div.action-block, body.ou-science div.action, body.ou-science div.download, body.ou-science div.contact, body.ou-science div.steps, body.ou-science div.comments, body.ou-science div.activity, body.ou-science div.example, body.ou-science div.quote, body.ou-science div.dialogue, body.ou-science dl.glossary, body.ou-science div.references, body.ou-science div.keypoints, body.ou-science div.summary, body.ou-science div.notes, body.ou-science div.feature-block, body.ou-science div.feature-block-link, body.ou-science #region2 ul.news.date p.date {
+background-image: url("img/science.png");
+}
+/* 4% of tertiary #A4A400 colour*/
+body.ou-science div.contact, body.ou-science div.steps, body.ou-science div.ou-help, body.ou-science div.action, body.ou-science div.activity, body.ou-science div.example, body.ou-science div.notes, body.ou-science div.ou-promo, body.ou-science #region2 ul.news p.more {
+background-color: #fbfbf5;
+}
+/* 25% 30% 40% 20% of tertiary #A4A400 colour*/
+body.ou-science div.box, body.ou-science div.action-block, body.ou-science div.action, body.ou-science div.download, body.ou-science div.contact, body.ou-science div.steps, body.ou-science div.comments, body.ou-science div.activity, body.ou-science div.example, body.ou-science div.quote, body.ou-science div.dialogue, body.ou-science dl.glossary, body.ou-science div.references, body.ou-science div.keypoints, body.ou-sciencediv.summary, body.ou-science div.notes, body.ou-science div.feature-block, body.ou-science div.feature-block-link, body.ou-science .ou-code, body.ou-science #region2 ul.news.date p.date {
+border-col  or: #e8e8bf #e4e  4b2 #dbdb99 #ede  dcc;
+}
+/* 100% of tertiary #A4A400 colour*/
+body.ou-science a img.border:hover, body.ou-science.nav-thumb:hover {
+border: 1px solid #A4A400;
+}
+
+
+body.ou-science div.feature-block.dark {
+background-color: #F4C400;
+border-color: #F4C400;
+background-image: none;
+}
+/*body.ou-science div.feature-block.dark H1, body.ou-science div.feature-block.dark H2, body.ou-science div.feature-block.dark H3, body.ou-science div.feature-block.dark H4, body.ou-science div.feature-block.dark p {
+color: #fff;
+}*/
+body.ou-science div.feature-block.light {
+background-color: #fff9e5;
+background-image: none;
+}
+body.ou-science div.action-block li a, body.ou-science div.box a.action {
+background-image: url("img/science-arrow-off.png");
+}
+body.ou-science div.action-block li a:hover, body.ou-science div.box a.action:hover {
+background-image: ur  l("img/science-arrow-on.png");
+}
+body.ou-science div.action-block.light li a, body.ou-science div.box.light a.action {
+background-image: url("img/science-arrow-off.png");
+}
+body.ou-science div.action-block.light li a:hover, body.ou-science div.box.light a.action:hover {
+background-image: url("img/science-arrow-on.png");
+}
+body.ou-science div.action-block.light, body.ou-science div.box.light {
+background: #fff9e5;
+}
+body.ou-science div.action-block.dark li a, body.ou-science div.box.dark a.action {
+background-image: url("img/science-dark-arrow-off.png");
+}
+body.ou-science div.action-block.dark li a:hover, body.ou-science div.box.dark a.action:hover {
+background-image: url("img/science-dark-arrow-on.png");
+}
+body.ou-science div.action-block.dark, body.ou-science div.box.dark {
+background: #F4C400;
+border-color: #F4C400;
+}
+body.ou-science div.action-block.dark a, body.ou-science div.box.dark a.action {
+color: #1F536B;
+}
+body.ou-science div.action-block.dark a:hover, body.ou-science div.box.dark a.action:hover {
+color: #000;
+}
+
+
+
+
+/* end of Faculty of Science*/
+/*Faculty of Social Sciences - colour palette
+
+Primary colour
+OU Dark Red #630031
+
+Secondary support colour
+OU Orange #E65B00
+
+Optional tertiary colour
+OU Yellow #F4C400
+
+Passive colours
+OU Mid Grey #B0B0B0
+OU Light Grey #D4D4D4
+*/
+body.ou-ss div.creative.go3 {
+background: url("img/ss-creative.png") no-repeat top right;
+}
+/* 100% of primary #630031 colour */
+body.ou-ss p#site-title a, body.ou-ss blockquote.pullquote1, body.ou-ss blockquote.pullquote2, body.ou-ss block quote p, body.ou-ss h1, body.ou-ss div.box h2, body.ou-ss ul.news h2 a {
+color: #630031;
+}
+/* 12% of primary #630031 colour*/
+body.ou-ss table, body.ou-ss tr, body .ou-ss th, body.ou-ss td, body.ou-ss legend, body.ou-ss fieldset, body.ou-ss img.border, body.ou-ss ul.news img, body.ou-ss #region2 ul.news img {
+border: 1px solid #ece0e6;
+}
+body.ou-ss ul.news li {
+border-top: 1px solid #ece0e6;
+border-bottom: none;
+}
+/* 6% of primary #630031 colour*/
+body.ou-ss th, body.ou-ss .ou-odd, body.ou-ss fieldset {
+background-color: #f6f0f3;
+}
+body.ou-ss div.box, body.ou-ss div.action-block, body.ou-ss div.action, body.ou-ss div.download, body.ou-ss div.contact, body.ou-ss div.steps, body.ou-ss div.comments, body.ou-ss div.activity, body.ou-ss div.example, body.ou-ss div.quote, body.ou-ss div.dialogue, body.ou-ss dl.glossary, body.ou-ss div.references, body.ou-ss div.keypoints, body.ou-ss div.summary, body.ou-ss div.notes, body.ou-ss div.feature-block, body.ou-ss div.feature-block-link, body.ou-ss #region2 ul.news.date p.date {
+background-image: url("img/ss.png");
+}
+body.ou-ss div.ou-video, body.ou-ss .slider {
+backgro  und-color: #f6f0  f3;
+}
+/* 3% of primary #630031 colour*/
+body.ou-ss div.contact, body.ou-ss div.steps, body.ou-ss div.ou-help, body.ou-ss div.action, body.ou-ss div.activity, body.ou-ss div.example, body.ou-ss div.notes, body.ou-ss div.ou-promo, body.ou-ss #region2 ul.news p.more { background-color: #faf7f9;
+}
+/* 12% 20% 22% 12% of primary #630031 colour*/
+body.ou-ss div.box, body.ou-ss div.action-block, body.ou-ss div.action, body.ou-ss div.download, body.ou-ss div.contact, body.ou-ss div.steps, body.ou-ss div.comments, body.ou-ss div.activity, body.ou-ss div.example, body.ou-ss  div.quote, body.ou-ss div.dialogue, body.ou-ss dl.glossary, body.ou-ss div.references, body.ou-ss div.keypoints, body.ou-ss div.summary, body.ou-ss div.notes, body.ou-ss div.feature-block, body.ou-ss div.feature-block-li  nk, body.ou-ss .ou-code, body.ou-ss #region2 ul.news.date p.date {
+border-color: #ece0e6 #e0ccd6 #ddc7d2 #ece0e6;
+}
+/* 100% of secondary #E65B00 colour*/
+body.ou-ss a img.border:hover, body.ou-ss .nav-thumb:hover {
+border: 1px solid #E65B00;
+}
+/* end of Faculty of Social Sciences*/
+/*Instite of Educational Technology  - colour palette
+
+Primary colour
+OU Beige #D1D1A5
+
+Secondar support colour
+OU Dark Grey #8C8C8C
+
+Optional tertiary colour
+OU Light Green #A4A400
+
+Passive colours
+OU Black #000000
+OU Light Grey #D4D4D4
+*/
+body.ou-iet div.creative.go3 {
+background: url("img/iet-creative.png") no-repeat top right;
+}
+/* 100% of passive black #000000 colour*/
+body.ou-iet p#site-title a, body.ou-iet blockquote.pullquote1, body.ou-iet blockquote.pullquote2, body.ou-iet blockquote p, body.ou-iet h1, body.ou-iet div.box h2, body.ou-iet ul.news h2 a {
+color: #000000;
+}
+/* 55% of primary #D1D1A5 colour*/
+body.ou-iet table, body.ou-iet tr, body.ou-iet th, body.ou-iet td, body.ou-iet legend, body.ou-iet fieldset, body.ou-iet img.border, body.ou-iet ul.news img, body.ou-iet #region2 ul.news img {
+border: 1px solid  #e6e6ce;
+}
+body.ou-iet ul.news li {
+border-top: 1px solid #e6e6ce;
+border-bottom: none;
+}
+/* 25% of primary #D1D1A5 colour*/
+body.ou-iet th, body.ou-iet .ou-odd, body.ou-iet fieldset {
+background-color: #f3f3e8;
+}
+body.ou-iet div.ou-video, body.ou-iet .slider {
+background-color: #f3f3e8;
+}
+/*20% of primary #D1D1A5 colour */
+body.ou-iet div.box, body.ou-iet div.action-block, body.ou-iet div.action, body.ou-iet div.download, body.ou-iet div.contact, body.ou-iet div.steps, body.ou-iet div.comments, body.ou-iet div.activity, body.ou-iet div.example, body.ou-iet div.quote, body.ou-iet div.dialogue, body.ou-iet dl.glossary, body.ou-iet div.references, body.ou-iet div.keypoints, body.ou-iet div.summary, body.ou-iet div.notes, body.ou-iet div.feature-block, body.ou-iet di  v.feature-block-link, body.ou-iet #region2 ul.news.date p.date {
+background-image: url("img/iet.png");
+}
+/* 12% of primary #D1D1A5 colour*/
+body.ou-iet div.contact, body.ou-iet div.steps, body.ou-iet div.ou-help, body.ou-iet div.action, body.ou-iet div.activity, body.ou-iet div.example, body.ou-iet div.notes, body.ou-iet div.ou-promo, body.ou-iet #region2 ul.news p.more {
+background-color: #f9f9f4;
+}
+/* 55% 85% 95% 45% of primary #D1D1A5 colour*/
+body.ou-iet div.box, body.ou-iet div.action-block, body.ou-iet div.action, body.ou-iet div.download, body.ou-iet div.contact, body.ou-iet div.steps, body.ou-iet div.comments, body.ou-iet div.activity, body.ou-iet div.example, body.ou-iet div.quote, body.ou-iet div.dialogue, body.ou-iet dl.glossary, body.ou-iet div.references, body.ou-iet div.keypoints, body.ou-ietdiv.summary, body.ou-iet div.notes, body.ou-iet div.feature-block, body.ou-iet div.feature-block-link, body.ou-iet .ou-code, body.ou-iet #region2 ul.news.date p.date {
+border-color: #e6e6ce #d8d8b2 #d3d3aa #eaead6;
+}
+/* 100% of secondary #8C8C8C colour*/
+body.ou-iet a img.border:hover, body.ou-iet .nav-thumb:hover {
+border: 1px solid #8C8C8C;
+}
+/* end of Instite of Educational Technology*/
+/*Knowledge Media Institute  - colour palette
+
+Primary colour
+OU Dark Blue #003366
+
+Secondary support colour
+OU Blue #50BBDE
+
+Optional tertiary colour
+OU Turquoise #00B0AC
+
+Passive colours
+OU Light Grey #D4D4D4
+OU Black #000000
+*/
+body.ou-kmi div.creative.go3 {
+background: url("img/kmi-creative.png") no-repeat top right;
+}
+/* 100% of primary #003366 colour*/
+body.ou-kmi p#site-title a, body.ou-kmi blockquote.pullquote1, body.ou-kmi blockquote.pullquote2, body.ou-kmi blockquote p, body.ou-kmi h1, body.ou-kmi div.box h2, body.ou-kmi ul.news h2 a {
+color: #003366;
+}
+/* 13% of primary #003366 colour*/
+body.ou-kmi table, body.ou-kmi tr, body.ou-kmi th, body.ou-kmi td, body.ou-kmi legend, body.ou-kmi fieldset, body.ou-kmi img.border, body.ou-kmi ul.news img, body.ou-kmi #region2 ul.news img {
+border: 1px solid #dee5eb;
+}
+/* 15% of primary #003366 colour*/
+body.ou-kmi ul.news li {
+border-top: 1px solid #d9e1e8;
+border-bottom: none;
+}
+/* 6% of primary #003366 colour*/
+body.ou-kmi th, body.ou-kmi .ou-odd, body.ou-kmi fieldset {
+background-color: #f0f3f6;
+}
+body.ou-kmi div.ou-video, body.ou-kmi .slider {
+background-color: #f0f3f6;
+}
+/* 5% of primary #003366 colour*/
+body.ou-kmi div.box, body.ou-kmi div.action-block, body.ou-kmi div.action, body.ou-kmi div.download, body.ou-kmi div.contact, body.ou-kmi div.steps, body.ou-kmi div.comments, body.ou-kmi div.activity, body.ou-kmi div.example, body.ou-kmi div.quote, body.ou-kmi div.dialogue, body.ou-kmi dl.glossary, body.ou-kmi div.references, body.ou-kmi div.keypoints, body.ou-kmi div.summary, body.ou-kmi div.notes, body.ou-kmi div.feature-block, body.ou-kmi div.feature-block-link, body.ou-kmi #region2 ul.news.date p.date {
+background-image: url("img/kmi.png");
+}
+/* 3% of primary #003366 colour*/
+body.ou-kmi div.contact, body.ou-kmi div.steps, body.ou-kmi div.ou-help, body.ou-kmi div.action, body.ou-kmi div.activity, body.ou-kmi div.example, body.ou-kmi div.notes, body.ou-kmi div.ou-promo, body.ou-kmi #region2 ul.news p.more {
+background-color: #f7f9fa;
+}
+/* 13% 20% 23% 12% of primary #003366 colour*/
+body.ou-kmi div.box, body.ou-kmi div.action-block, body.ou-kmi div.action, body.ou-kmi div.download, body.ou-kmi div.contact, body.ou-kmi div.steps, body.ou-kmi div.comments, body.ou-kmi div.activity, body.ou-kmi div.example, body.ou-kmi div.quote, body.ou-kmi div.dialogue, body.ou-kmi dl.glossary, body.ou-kmi div.references, body.ou-kmi div.keypoints, body.ou-kmi div.summary, body.ou-kmi div.notes, body.ou-kmi div.feature-block, body.ou-kmi div.feature-block-link, body.ou-kmi .ou-code, body.ou-kmi #region2 ul.news.date p.date {
+border-color: #dee5eb #ccd6e0 #c4d0dc #e0e6ec;
+}
+/* 100% of Secondary #50BBDE colour*/
+body.ou-kmi a img.border:hover, body.ou-kmi.nav-thumb:hover {
+border: 1px solid #50BBDE;
+}
+/* end of Knowledge Media Institute*/
+
+
+/*eSTEem - colour palette
+
+OU Yellow - #F4C400
+OU Yellow tint 1 - #F7D64D
+OU Yellow tint 2 - #FBE799
+OU Yellow shade 2 - #493B00
+
+OU Orange - #E65B00
+OU Orange tint 1 - #F2AD7F
+OU Orange shade 1 - #8A3700
+OU Orange shade 2 - #5C2400
+
+OU Light Green - #A4A400
+OU Dark Green - #4B5F4B
+OU Beige -  #D1D1A5
+OU Dark Grey - #8C8C8C
+
+*/
+body.ou-esteem div.creative.go3 {
+/*background: url("img/kmi-creative.png") no-repeat top right;*/
+}
+/* 100% of #8A3700 colour*/
+body.ou-esteem p#site-title a, body.ou-esteem blockquote.pullquote1, body.ou-esteem blockquote.pullquote2, body.ou-esteem blockquote p, body.ou-esteem h1, body.ou-esteem div.box h2, body.ou-esteem ul.news h2 a {
+color: #8A3700;
+}
+/* 20% of #8a3700 colour*/
+body.ou-esteem table, body.ou-esteem tr, body.ou-esteem th, body.ou-esteem td, body.ou-esteem legend, body.ou-esteem fieldset, body.ou-esteem img.border, body.ou-esteem ul.news img, body.ou-esteem #region2 ul.news img {
+border: 1px solid #e8d7cc;
+}
+/* 15% of #8A3700 colour*/
+body.ou-esteem ul.news li {
+border-top: 1px solid #eee1d9;
+border-bottom: none;
+}
+/* 15% of #f2ad7f colour*/
+body.ou-esteem th, body.ou-esteem .ou-odd, body.ou-esteem fieldset {
+background-color: #fdf3ec;
+}
+body.ou-esteem div.ou-video, body.ou-esteem .slider {
+background-color: #fefaeb;
+}
+/* 15% of #8A3700 colour*/
+body.ou-esteem div.box, body.ou-esteem div.action-block, body.ou-esteem div.action, body.ou-esteem div.download, body.ou-esteem div.contact, body.ou-esteem div.steps, body.ou-esteem div.comments, body.ou-esteem div.activity, body.ou-esteem div.example, body.ou-esteem div.quote, body.ou-esteem div.dialogue, body.ou-esteem dl.glossary, body.ou-esteem div.references, body.ou-esteem div.keypoints, body.ou-esteem div.summary, body.ou-esteem div.notes, body.ou-esteem div.feature-block, body.ou-esteem div.feature-block-link, body.ou-esteem #region2 ul.news.date p.date {
+background-image: url("img/esteem.png");
+}
+/* 3% of #8A3700 colour*/
+body.ou-esteem div.contact, body.ou-esteem div.steps, body.ou-esteem div.ou-help, body.ou-esteem div.action, body.ou-esteem div.activity, body.ou-esteem div.example, body.ou-esteem div.notes, body.ou-esteem div.ou-promo, body.ou-esteem #region2 ul.news p.more {
+background-color: #fbf9f7;
+}
+/* 13% 20% 23% 12% of #8A3700 colour*/
+body.ou-esteem div.box, body.ou-esteem div.action-block, body.ou-esteem div.action, body.ou-esteem div.download, body.ou-esteem div.contact, body.ou-esteem div.steps, body.ou-esteem div.comments, body.ou-esteem div.activity, body.ou-esteem div.example, body.ou-esteem div.quote, body.ou-esteem div.dialogue, body.ou-esteem dl.glossary, body.ou-esteem div.references, body.ou-esteem div.keypoints, body.ou-esteem div.summary, body.ou-esteem div.notes, body.ou-esteem div.feature-block, body.ou-esteem div.feature-block-link, body.ou-esteem .ou-code, body.ou-esteem #region2 ul.news.date p.date {
+border-color: #f0e5de #e8d7cc #e4d1c4 #f1e7e0;
+}
+/* 100% of #f4c400 colour*/
+
+/*body.ou-esteem a img.border:hover, body.ou-esteem.nav-thumb:hover {
+border: 1px solid #f4c400;
+}
+
+
+/*dark blocks*/
+/*region 1 dark block*/
+body.ou-esteem div#region1 div.feature-block.dark, body.ou-esteem div#region1 div.action-block.dark {
+background-color: #954B19;
+border-color: #8a3700;
+}
+body.ou-esteem div#region1 div.feature-block.dark h1, body.ou-esteem div#region1 div.feature-block.dark h2, body.ou-esteem div#region1 div.feature-block.dark h3, body.ou-esteem div#region1 div.feature-block.dark li{  
+color: #fff;
+}
+/*end of region 1 dark block*/
+/*region 2 light blocks */
+body.ou-esteem div.feature-block.dark {
+background-color: #5C2400;
+border-color: #5C2400;
+background-image: none;
+}
+body.ou-esteem div.feature-block.dark H1, body.ou-esteem div.feature-block.dark H2, body.ou-esteem div.feature-block.dark H3, body.ou-esteem div.feature-block.dark H4, body.ou-esteem div.feature-block.dark p {
+color: #f8d6bf;
+}
+body.ou-esteem div.feature-block.dark ul.news li{
+border-top-color: #954b19;
+}
+body.ou-esteem div.feature-block.dark a{
+color: #F2AD7F;
+}
+body.ou-esteem div.feature-block.dark a:hover, body.ou-esteem div.feature-block.dark a:visited:hover{
+color: #f8d6bf;
+}
+body.ou-esteem div.action-block.dark li a, body.ou-esteem div.box.dark a.action {
+background-image: url("esteemimg/dark-block-arrow-off.png");
+}
+body.ou-esteem div.action-block.dark li a:hover, body.ou-esteem div.box.dark a.action:hover {
+background-image: url("esteemimg/dark-block-arrow-on.png");
+}
+body.ou-esteem div.action-block.dark, body.ou-esteem div.box.dark {
+background: #5C2400;
+border-color: #5C2400;
+}
+body.ou-esteem div.action-block.dark a, body.ou-esteem div.box.dark a.action {
+color: #f8d6bf;
+}
+body.ou-esteem div.action-block.dark a:hover, body.ou-esteem div.box.dark a.action:hover {
+color: #fff;
+}
+/*end of region 2 light blocks*/
+/*end of dark blocks*/
+
+/*light blocks*/
+/*region 1 light block*/
+body.ou-esteem div#region1 div.feature-block.light, body.ou-esteem div#region1 div.action-block.light {
+background-color: #fefcf2;
+}
+/*end of region 1 light block*/
+/*region 2 light blocks*/
+body.ou-esteem div.feature-block.light {
+background-color: #efefe0;
+border-color: #E3E3C9;
+background-image: none;
+}
+body.ou-esteem div.feature-block.light H1, body.ou-esteem div.feature-block.light H2, body.ou-esteem div.feature-block.light H3, body.ou-esteem div.feature-block.light H4 {
+color: #8A3700;
+}
+body.ou-esteem div.feature-block.light p, body.ou-esteem div.feature-block.light li{
+color: #493b00;
+}
+body.ou-esteem div.feature-block.light ul.news li{
+border-top-color: #a49d7f;
+}
+body.ou-esteem div.feature-block.light a{
+color: #493b00;
+}
+body.ou-esteem div.feature-block.light a:hover, body.ou-esteem div.feature-block.light a:visited:hover{
+color: #8a3700;
+}
+body.ou-esteem div.action-block li a, body.ou-esteem div.box a.action {
+background-image: url("img/esteem-arrow-off.png");
+}
+body.ou-esteem div.action-block li a:hover, body.ou-esteem div.box a.action:hover {
+background-image: url("img/esteem-arrow-on.png");
+}
+body.ou-esteem div.action-block.light li a, body.ou-esteem div.box.light a.action {
+background-image: url("img/esteem-arrow-off.png");
+}
+body.ou-esteem div.action-block.light li a:hover, body.ou-esteem div.box.light a.action:hover {
+background-image: url("img/esteem-arrow-on.png");
+}
+body.ou-esteem div.action-block.light, body.ou-esteem div.box.light {
+background: #efefe0;
+border-color: #E3E3C9;
+}
+body.ou-esteem div.action-block.light a, body.ou-esteem div.box.light a.action {
+color: #5c2400;
+}
+body.ou-esteem div.action-block.light a:hover, body.ou-esteem div.box.light a.action:hover {
+color: #8a3700;
+}
+/*end of region 2 light blocks*/
+/*end of light blocks*/
+
+body.ou-esteem div.feature-block h2 a, body.ou-esteem div.feature-block h3 a{
+text-decoration: none;
+}
+body.ou-esteem table.views-row, body.ou-esteem table.views-row tr, body.ou-esteem table.views-row td, body.ou-esteem table.views-row th,
+body.ou-esteem div.view-project-search table tr,
+body.ou-esteem div.view-project-search table tr td {
+border: 0;
+}
+
+body.ou-esteem div.view-project-search table tr.locations td {
+background: #FDF3EC;
+}
+
+/*Search Filter*/
+.ou-esteem div.search-filter {
+background: #8A3700 url(http://www.open.ac.uk/includes/ouice/box-shade-2.png) repeat-x bottom;
+display: block;
+}
+
+.ou-esteem a.toggle-slide {
+background: url(esteemimg/toggle-arrow-open.gif) right no-repeat;
+}
+.ou-esteem a.toggle-slide.active {
+background: url(esteemimg/toggle-arrow-closed.gif) right no-repeat;
+}
+.ou-esteem div.search-filter {
+border-color:#E5E5E5 #D1D1D1 #CCC #E5E5E5;
+}
+.ou-esteem div.search-filter fieldset {
+background-color: #f6f6ed;
+}
+.ou-esteem div.search-filter .views-exposed-widget p{
+color: #a5afa5;
+text-shadow: 0px 1px 1px #fff;
+}
+
+.ou-esteem div.search-filter label {
+font-size: 1.2em;
+margin-right: .5em;
+}
+
+.ou-esteem div.search-filter h2, .ou-esteem div.search-filter h2 a, div.search-filter label {
+color: white;
+}
+
+/*.ou-esteem div.search-filter h2, .ou-esteem div.search-filter h2 a, .ou-esteem div.search-filter label {
+color:#8A3700;
+}*/
+.ou-esteem div.search-filter h2 a:hover{
+color: #493B00;
+}
+/*.ou-esteem div.search-filter div.views-widget{
+border-bottom: 1px solid #d1d1a5;
+}*/
+body.ou-esteem div.searchresult thead th {
+background-color: #fcecad;
+}
+body.ou-esteem div.searchresult a{
+color:#8A3700; 
+}
+body.ou-esteem div.searchresult a:hover, body.ou-esteem div.searchresult a:visited:hover{
+color: #C30;
+}
+.ou-esteem .searchresult tr.border td {
+border-bottom:1px solid #E8D7CC!important;
+}
+
+/*slideshow*/
+body.ou-esteem .slideshow .prev {
+	background-image: url(esteemimg/slideshow-left-arrow.png);
+	display:none;
+}
+body.ou-esteem .slideshow .prev:hover {
+	background-image: url(esteemimg/slideshow-left-arrow.png);
+}
+body.ou-esteem .slideshow .next {
+	background-image: url(esteemimg/slideshow-right-arrow.png);
+	display:none;
+}
+body.ou-esteem .slideshow .next:hover {
+	background-image: url(esteemimg/slideshow-right-arrow.png);
+}
+body.ou-esteem div.textbg{
+	border-top: 1px solid #e65b00;
+	border-top: 1px solid rgba(230,91,0, 0.8);
+}
+/*end of slideshow*/
+
+/* end of esteem*/
+
+
+/*search filter*/
+.feature-block.searchresult{
+	width: 95.8%;
+	padding: 0 2%;
+	margin: 0.5em 0 0.5em;
+}
+a.toggle-slide {
+	padding-right: 1em;
+}
+div.search-filter {
+	background-position:center bottom;
+	background-repeat:repeat-x;
+	-webkit-border-radius:6px 6px 6px 6px;
+	-moz-border-radius:6px;
+	border-radius:6px 6px 6px 6px;
+	-webkit-box-shadow:0 3px 3px #EEE;
+	-moz-box-shadow:0 3px 3px #EEE;
+	box-shadow:0 3px 3px #EEE;
+	display:inline-block;
+	border-style:solid;
+	border-width:1px;
+	margin:1em 0;
+	padding:0 1em .5em;
+}
+div.text-filter {
+	padding-bottom:1em;
+}
+div.text-filter ul.header {
+	float:left;
+	width:100%;
+}
+div.text-filter ul.header li {
+	display:inline-block;
+}
+div.text-filter ul {
+	display:inline-block;
+	margin:.2em 0;
+	padding:0;
+}
+div.text-filter ul li {
+	padding-right:1.5em;
+	display:inline;
+}
+.item-list ul li {
+	margin: 0;
+}
+div.search-filter {
+	background:#EFEFE0 url(http://www.open.ac.uk/includes/ouice/box-shade-2.png) repeat-x bottom;
+	display:block;
+}
+div.search-filter fieldset {
+	border:0;
+	margin:0 0 0.5em 0;
+	padding:0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+div.search-filter .views-exposed-widget{
+	/*padding: 0.5em 1em;*/
+	padding: 0;
+	float: none;
+}
+div.search-filter .views-exposed-widget p{
+	font-size: 3em;
+	font-weight:bold;
+	position: relative;
+	float: left;
+	margin: 0 1em 0 0.5em;
+	padding: 0.2em 0;
+}
+div.search-filter h2, div.search-filter h2 a, div.search-filter label {
+	text-decoration: none;
+}
+
+div.search-filter h2, div.search-filter h2 a, div.search-filter label {
+	color: /*generic*/;
+}
+div.search-filter h2 a:hover{
+	color: /*generic*/;
+}
+div.search-filter div.views-widget{
+	margin: 0 0 1em 0;
+	padding: 0 0 0.5em 0;
+}
+div.search-filter div.views-widget{
+	border-bottom: /*generic*/;
+}
+div.searchresult thead th a {
+	text-decoration: none;
+}
+/*end of search filter*/
+
+
+/*IE 6 background removal*/
+* div.ou-tip, div.search-filter, div.feature-block, div.expression-of-interest {
+background-image:none;
+}
+div.text-filter h3, div.search-filter li {
+margin:0;
+}
+.views-exposed-form label {
+    font-weight: normal;
+}
+.item-list ul {
+    margin: 12px 0;
+    padding: 0;
+}
+div.slide-area {
+	display:none;
+}
+a.pdflink {
+	background:url(/includes/ouice/3/icon-pdf.gif) left no-repeat;
+	padding: 6px 0px 6px 32px;
+}
+/*overrides*/
+div#region2 ul.news {
+	margin-bottom: 0.5em;
+}
+p.more{
+	margin: 0.5em 0;
+}
+
+/*Additional styles*/
+div.creative.go3 {
+	width: 100%;
+	border: 0;
+	padding: 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+div.creative.go3 img {
+	float: right;
+	padding-right: 2em;
+}
+/*div.creative.go3 {
+height: 150px;
+width: 500px;
+border: 0;
+}*/
+/*div#site-ident {
+clear: right;
+}
+p#site-title {
+background: rgb(255, 255, 255);
+background: rgba(2  55, 255, 255, 0.8);
+-moz-border-radius: 0 8px  8px 0;
+-webkit-border-radius: 0 8px 8px 0;
+border-radius: 0 8px 8px 0;
+float: left;
+margin: -2em 0 0 0;
+padding: 0.3em  0;
+}*/
+p#site-title a {
+	margin: 0.5em;
+}
+#region2 ul.news h2 a:hover {
+	color: #cc3300;
+}
+.ou-full-nav a {
+	color: #1F536B;
+}
+.creative {
+	float: right;
+	clear: right;
+	width: 100%;
+}
+.go3 {
+	float: right;
+}
+.feature-block {
+	display: inline-block;
+}
+.caption {
+	float:right;
+	max-width: 1 30px;
+	margin: 0 0 10px 20px;
+}
+#region2 ul.news li {
+	padding: 0.5em 0 0 0;
+}
+#region2 ul.news img {
+	float: left;
+	margin: 0 1em 0.5em 0;
+	padding: 0;
+	max-width: 70px;
+}
+#region2 ul.news  p {
+	margin: 1em 0 0em 0;
+}
+#region2 ul.news p.date {
+	margin: 0 0 0.5em 0;
+}
+#region2 ul.news.date p.date {
+	margin: 0 1em 0.5em 0;
+	float:left;
+	text-align: center;
+	padding: 0.5em;
+	background-position: center bottom;
+	background-repeat: repeat-x;
+	border-style: solid;
+	border-width: 1px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	-moz-box-shadow: 0 1px 1px #EEEEEE;
+	-webkit-box-s adow: 0 1px 1px #EEEEEE;
+	box-shadow: 0 1px 1px #EEEEEE;
+	line-height: 1.2em;
+}
+#region2 ul.news.date .dateday, #region2 ul.news.date .datemonth, #region2 ul.news.date .dateyear {
+	clear: left;
+	display: block;
+}
+#region2 ul.news h3 {
+	font-size: 1.3em;
+	margin: 0;
+	line-height: 1.2em;
+	clear: right;
+	display: block;
+}
+#region2 ul.news h3 a {
+	text-decoration: none;
+}
+div.c1of3, div.c2of3, div.c3of3 {
+	width: 29%;
+}
+#region2 ul.news p.more {
+	text-align: right;
+	margin: 0.5em 0 0 0;
+	padding: 0.2em 0;
+}
+#region2 ul.news p.more a {
+	text-decoration: none;
+}
+#region2 .feature-block {
+	display: block;
+}
+div.c1of3, div.c2of3, div.c3of3 {
+	width: 29%;
+}
+body ul.news h2 a:hover, body ul.news h2 a:visited:hover, body .ou-full-nav a:hover, body .ou-full-nav a:visited:hover {
+	color: #C30;
+}
+/*slider*/
+/*Featured Content Slider by: Chris Coyier..*/
+/*UTILITY STYLES*/
+.floatLeft {
+float: left;
+margin-right: 10px;
+}
+.floatRight {
+float: right;
+}
+.clear {
+clear: both;
+}
+a {
+outline: none;
+}
+/* PAGE STRUCTURE*/
+#wrap {
+width: 327px;
+margin: 2em auto;
+position: relative;
+min-height: 259px;
+background: #fff;
+border: 2px solid #ffffff;
+}
+/*TYPOGRAPHY*/
+/*SLIDER*/
+/*.slider-wrap {
+width: 325px;
+position: absolute;
+top: 0px;
+left: 0px;
+}
+.stripViewer .panelContainer .panel ul {
+text-align: left;
+margin: 0 15px 0 30px;
+}
+.stripViewer {
+position: relative;
+overflow: hidden;
+width: 327px;
+height: 222px;
+}
+.stripViewer .panelContainer. {
+position: relative;
+left: 0;
+top: 0;
+}
+.stripViewer .panelContainer .panel {
+float: left;
+height: 100%;
+position: relative;
+width: 327 px;
+}
+.stripNavL, .stripNavR, .stripNav {
+display: none;
+}
+.nav-thumb {
+border: 1px solid #DCD3E5;
+margin-right: 5px;
+}
+#movers-row {
+margin: -37px 0 0 50px;
+}
+#movers-row div {
+width: 20%;
+float: left;
+}
+#movers-row div a.cross-link {
+float: right;
+}
+.photo-meta-data {
+background: url(images/transpBlack.png);
+padding: 10px;
+height: 33px;
+margin-top: -54px;
+position: relative;
+z-index: 9999;
+color: white;
+}
+.photo-meta-data span {
+font-size: 13px;
+}
+.cross-link {
+display: block;
+width: 50px;
+margin-top: -10px;
+position: relative;
+padding-top: 12px;
+z-index: 9999;
+}
+.active-thumb {
+background: transparent url(images/icon-uparrowsmallwhite.png) top center no-repeat;
+}
+.slider {
+padding: 0.5em;
+margin: 1em 0;
+max-width: 100%;
+}*/
+
+
+
+/*slideshow*/
+.slideshow {
+                display: inline-block;
+                width: 100%;
+                margin-top: 10px;
+}
+.slideshow h1, .slideshow h2, .slideshow h3, .slideshow h4, .slideshow h5, .slideshow h6, .slideshow p, .slideshow img, .slideshow ol, .slideshow ul, .slideshow li, .slideshow article, .slideshow aside, .slideshow canvas, .slideshow figure, .slideshow section {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+.slideshow article {
+                display: block;
+}
+.slideshow article.note {
+                background: #fff;
+                background: rgba(255,255,255,0.8);
+}
+div.textbg{
+                background: #333333;
+                background: rgba(0,0,0,0.4);
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                -webkit-border-radius: 0 0 6px 6px;
+                -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+                border-top: 1px solid #fff;
+                border-top: 1px solid rgba(255,255,255,0.5);
+                width: 100%;
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+                filter: alpha(opacity=65);
+}
+.slideshow section {
+                float: left;
+                position: relative;
+}
+.slideshow section ol {
+                list-style: none;
+                background: #fff;
+                background: rgba(255,255,255,0.9);
+}
+.slideshow li {
+                position:relative;
+                list-style: none;
+}
+.slideshow .slidewrap {
+                border: 1px solid #deddde;
+                overflow: hidden !important;
+                position: relative;
+                width: 100%;
+                max-width: 880px;
+}
+.slideshow .slidewrap h2 {
+                padding: 0.5% 3%;
+}
+.slideshow .slidewrap h2, .slideshow .slidewrap p {
+                color: #fff;
+}
+.slideshow .slidewrap p {
+                padding:0.5% 3% 1%;
+}
+.slidewrap img {
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                border-radius: 6px;
+}
+ul.nextprev {
+                padding: 0 2% 0 2%;
+}
+.slideshow .prev, .slideshow .next {
+                display: block;
+                text-indent: -9999px;
+}
+.slideshow .prev {
+                background-image: url(../images/../images/slideshowimg/slideshow-arrow-left.png);
+                background-position: -39px 50%;
+                background-repeat: no-repeat;
+}
+.slideshow .prev:hover {
+                background-image: url(../images/slideshowimg/slideshow-arrow-left.png);
+                background-position: 0px 50%;
+                background-repeat: no-repeat;
+}
+/*.slideshow .first .prev.disabled {
+display: none;
+}*/
+.slideshow .next {
+                background-image: url(../images/slideshowimg/slideshow-arrow-right.png);
+                background-position: 4px 50%;
+                background-repeat: no-repeat;
+}
+.slideshow .next:hover {
+                background-image: url(../images/slideshowimg/slideshow-arrow-right.png);
+                background-position: -34px 50%;
+                background-repeat: no-repeat;
+}
+/*.slideshow .first .next.disabled {
+                display: none;
+}*/
+.slideshow .prev.disabled, .slideshow .next.disabled {
+ 
+}
+.slideshow {
+                position: relative;
+                width: 100%;
+}
+.slideshow .first .slidewrap {
+                width: 100%;
+                margin: 0 auto;
+                border: 0;
+}
+.slideshow .prev, .slideshow .next {
+                position: absolute;
+                width: 36px;
+                height: 100%;
+                display: block;
+                z-index: 1;
+                padding: 0;
+}
+.slideshow .prev{
+                float: left;
+}
+.slideshow .next {
+                float: right;
+}
+.slideshow .prev {
+                left: 0;
+}
+.slideshow .next {
+                right: 0;
+}
+/*slideshow style 2 and 3*/
+.slideshow.style2, .slideshow.style3  {
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+}
+.slideshow.style2 {
+                background: #ddd;
+}
+.slideshow.style2 .first {
+                width: 68%;
+                margin: 0;
+                padding: 1%;
+}
+.slideshow.style3 .first {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+}
+.slideshow.style2 ul.nextprev, .slideshow.style3 ul.nextprev {
+                display: none;
+}
+.slideshow.style2 img {
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+}
+.slideshow.style3 img {
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+}
+.slideshow.style2 .textbg, .slideshow.style3 .textbg {
+                width: 100%;
+}
+.slideshow.style3 .slidewrap h2, .slideshow.style3 .slidewrap p {
+                width: 63%;
+}
+.slideshow.style2 .slideside, .slideshow.style3 .slideside {
+                position: absolute;
+                width: 29%;
+}
+.slideshow.style2 .slideside {
+                top: 1%;
+                right: 1%;
+}
+.slideshow.style3 .slideside {
+                background: #e0e0e0;
+                background: rgba(255,255,255,0.5);
+                padding: 1%;
+                top: 0;
+                right: 0;
+                -moz-border-radius: 0 6px 6px 0;
+                -webkit-border-radius: 0 6px 6px 0;
+                border-radius: 0 6px 6px 0;
+                -moz-box-shadow: 0 10px 30px 0 #333333;
+                -webkit-box-shadow: 0 10px 30px 0 #333333;
+                box-shadow: 0 10px 30px 0 #333333;
+}
+.slideshow.style2 .slideside ul, .slideshow.style3 .slideside ul  {
+                list-style: none;
+}
+.slideshow.style2 .slideside li, .slideshow.style3 .slideside li {
+                background-image: url(index.php_files/constant-shade.png);
+                background-position: center bottom;
+                background-repeat: repeat-x;
+                background-color: #EEE;
+                background-color: rgba(255,255,255,0.7);
+                overflow: hidden;
+                font-size: 90%;
+                margin: 3% 0%;
+                -moz-border-radius: 3px;
+                -webkit-border-radius: 3px;
+                border-radius: 3px;
+}
+.slideshow.style2 .slideside li:hover, .slideshow.style3 .slideside li:hover {
+                background-color: #fff;
+                background-color: rgba(255,255,255,0.9);
+}
+.slideshow.style3 .slideside li {
+                margin: 0 0 3% 0;
+}
+.slideshow.style2 .slideside li a, .slideshow.style3 .slideside li a {
+                color: #143748;
+                font-size: 1.2em;
+                text-decoration: none;
+                display: block;
+                padding: 3%;
+}
+.slideshow.style2 .slideside li:hover, .slideshow.style3 .slideside li:hover{
+                margin-left: -5px;
+}
+.slideshow.style2 .slideside li a:hover, .slideshow.style3 .slideside li a:hover {
+                color: #C30;
+                margin-right: 5px;
+}
+.slideshow.style2 .verticalslide, .slideshow.style3 .verticalslide {
+                width: 29%;
+                position: absolute;
+                bottom: 0;
+                right: 1%;
+                margin: 0;
+                text-align: center;
+}
+.slideshow.style2 .verticalslide ul, .slideshow.style3 .verticalslide ul {
+                background-image: url(index.php_files/context-nav-shade-current.png);
+                background-position: center bottom;
+                background-repeat: repeat-x;
+                background-color: #666;
+                padding: 2% 0;
+                -moz-border-radius: 3px 3px 0 0;
+                -webkit-border-radius: 3px 3px 0 0;
+                border-radius: 3px 3px 0 0;
+}
+.slideshow.style2 .verticalslide .up, .slideshow.style2 .verticalslide .down, .slideshow.style3 .verticalslide .up, .slideshow.style3 .verticalslide .down{
+                text-indent: -9999px;
+                display: inline-block;
+                width: 20px;
+                padding: 0 5%;
+}
+.slideshow.style2 .verticalslide ul a.up, .slideshow.style3 .verticalslide ul a.up {
+                background: url(esteemimg/slideshow-up-arrow.gif) no-repeat center;
+}
+.slideshow.style2 .verticalslide ul a.down, .slideshow.style3 .verticalslide ul a.down {
+                background: url(esteemimg/slideshow-down-arrow.gif) no-repeat center;
+}
+/*end of slideshow style 2 and 3*/
+ 
+/*slideshow 4*/
+.slideshow.style4 div.thumbslide{
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                position: relative;
+}
+.slideshow.style4 div.thumbslide {
+                background: #ddd;
+                -webkit-border-radius: 0 0 6px 6px;
+                -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+                width: 100%;
+                z-index: 1;
+}
+.slideshow.style4 div.thumbslide li{
+                width: 12%;
+                float: left;
+                list-style: none;
+                margin: 1%;
+                margin-top: -12px;
+}
+.slideshow.style4 div.thumbslide li a{
+                display: block;
+                padding-top: 18px;
+                position: relative;
+                float: right;
+}
+img.thumbimg{
+                border: 1px solid black;
+}
+img.thumbimg:hover{
+                border: 1px solid red;
+}
+.slideshow.style4 div.thumbslide li.active a {
+                background: url(esteemimg/slideshow-up-arrow.gif) no-repeat top;
+}
+.slideshow.style4 div.thumbslide li img{
+                position: relative;
+}
+.slideshow.style4 div.textbg {
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+}
+.slideshow.style4 .slidewrap img {
+                -webkit-border-radius: 6px 6px 0 0;
+                -moz-border-radius: 6px 6px 0 0;
+                border-radius: 6px 6px 0 0;
+}
+.slideshow.style4 ul.thumbnextprev .next, .slideshow.style4 ul.thumbnextprev .prev {
+                display: inline-block;
+                height: 100%;
+                width: 12px;
+                position: absolute;
+                top: 0;
+                padding: 0 10px;
+                background-image: url(index.php_files/context-nav-shade-current.png);
+                background-position: center bottom;
+                background-repeat: repeat-x;
+                background-color: #ddd;
+}
+.slideshow.style4 ul.thumbnextprev .next{
+                background: #ddd url(../images/slideshowimg/thumbslide-arrow-right.gif) no-repeat center;
+                right: 0
+}
+.slideshow.style4 ul.thumbnextprev .next:hover{
+}
+.slideshow.style4 ul.thumbnextprev .prev{
+                background: #ddd url(../images/slideshowimg/thumbslide-arrow-left.gif) no-repeat center;
+                left: 0;
+}
+.slideshow.style4 ul.thumbnextprev .prev:hover{
+}
+.slideshow.style4 ul.thumbnextprev .next:hover, .slideshow.style4 ul.thumbnextprev .prev:hover{
+                background-color: #666;
+}
+/*end of slideshow 4*/
+/*end of slideshow*/
+
+
+/*Buttons*/
+p.Button a, p.big Button a {
+padding: 0.4em 0.8em;
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+text-align: center;
+cursor: pointer;
+}
+p.big Button a {
+padding: 0.4em 1em;
+font-size: 1.4em;
+}
+/*issues with ICE*/
+
+/* Strong on state for neutral theme*/
+body.neutral div#region2 div.ou-context-nav li li strong, body.neutral div#region2 div.ou-full-nav strong {
+background-color: #666666;
+}
+/*sharpens resized images in IE*/
+img {
+-ms-interpolation-mode: bicubic;
+}
+

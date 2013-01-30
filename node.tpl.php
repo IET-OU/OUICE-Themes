@@ -1,5 +1,5 @@
 <?php
-// $Id: node.tpl.php,v 3.0 2010/10/25 09:00:00 laustin and PConolly IPP $
+// $Id: node.tpl.php,v 3.1 2012/06/29 09:00:00 laustin (07779 146104) $
 /**
  * @file node.tpl.php
  *
@@ -52,35 +52,43 @@
  * @see template_preprocess()
  * @see template_preprocess_node()
  */
+//print_r($node);
 ?>
 <!-- start node.tpl.php -->
-<div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">
-  <?php print $picture ?>
-  <?php if ($page == 0): ?>
-  <h2 class="title"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+  <?php print $user_picture; ?>
+
+  <?php print render($title_prefix); ?>
+  <?php if (!$page): ?>
+    <h2 class="title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php endif; ?>
-  <div class="meta">
-    <?php if ($submitted): ?>
+  <?php print render($title_suffix); ?>
+
+  <?php if ($display_submitted): ?>
     <span class="submitted"><?php print $submitted ?></span>
+  <?php endif; ?>
+
+  <div class="content clearfix"<?php print $content_attributes; ?>>
+    <?php
+      // We hide the comments and links now so that we can render them later.
+      // If OUBrand module being used
+      hide($content['comments']);
+      hide($content['links']);
+      hide($content['field_media']);
+      hide($content['field_blockquote']);
+      hide($content['field_image']);
+      //print (module_exists('oubrand') ? oubrand_replace_ou_tokens_in_node_content($node) : render($content));
+      print (module_exists('oubrand') ? oubrand_views_content($node->nid,render($content)) : render($content));
+    ?>
+  </div>
+
+  <div class="clearfix">
+    <?php if (!empty($content['links'])): ?>
+      <div class="links"><?php print render($content['links']); ?></div>
     <?php endif; ?>
+
+    <?php print render($content['comments']); ?>
   </div>
-  <div class="content">
-  <?php print $content; ?>
-  </div>
-  <?php if ($terms): ?>
-  <div class="terms">
-    <?php print $terms; ?>
-  </div>
-  <?php endif;?>
-  <?php if ($links): ?>
-  <div class="links">
-    <?php print $links; ?>
-  </div>
-  <?php endif; ?>
-  <?php if ($node_bottom && !$teaser): ?>
-  <div id="node-bottom">
-    <?php print $node_bottom; ?>
-  </div>
-  <?php endif; ?>
+
 </div>
 <!-- /#node-<?php print $node->nid; ?> -->

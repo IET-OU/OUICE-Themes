@@ -1,0 +1,29 @@
+name = 'OUICEv3.x D7 v1.0 - (The Open University)'
+description = 'OUICEv3.x D7 v1.0 Parent Drupal Theme'
+package = Core
+version = '1.0.0'
+screenshot = 'screenshot.png'
+core = '7.x'
+
+stylesheets[screen][] = styles/style.css
+scripts[] = scripts/ouice3-theme.js
+regions[region100] = 'SiteHeader'
+regions[region0] = 'Region0'
+regions[content] = 'Region1'
+regions[region2] = 'Region2'
+regions[region3] = 'Region3'
+regions[help] = 'Help'
+regions[page_top] = 'Page top'
+regions[page_bottom] = 'Page bottom'
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = search
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; $Id: ou_ouice3_d7.info : v 1.0.0 2012/08/07  laustin $
+version = "7.14"
+project = "drupal"
+datestamp = "1335997555"

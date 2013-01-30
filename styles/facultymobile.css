@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Small viewports 2010.12.07
+.......................................................................... */
+/*.slideshow .first .next, .slideshow .first .prev, div.textbg {
+display: none;
+}*/
+
+body.ou-panels div.ou-content, div.ou-content {float:none;}

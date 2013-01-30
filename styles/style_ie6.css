@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 div.box, div.full-nav, div.action-block, div.action, div.tip, div.warning,
 div.download, div.contact, div.info, div.steps, div.code, div.comments,
 div.comment-form, div.activity, div.example, div.quote, div.dialogue, dl.glossary,
@@ -27,7 +29,7 @@ width:28%;
 width:21.5%;
 }
 /* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
-*html.js fieldset.collapsed legend,
+/**html.js fieldset.collapsed legend,
 *html.js fieldset.collapsed legend *,
 *html.js fieldset.collapsed table *,
 *html.js fieldset.collapsed div * {
@@ -36,7 +38,7 @@ display: inline !important;
 html.js fieldset div div table,
 html.js fieldset div table{
 display: inline !important;
-}
+}*/
 #site-header .creative .quoteMarkStart {top:0.02em;display:block;}
 #site-header .creative .quoteMarkEnd {top:-0.06em;}
 #site-header .creative .masthead-quote blockquote{line-height: 1.1em;}

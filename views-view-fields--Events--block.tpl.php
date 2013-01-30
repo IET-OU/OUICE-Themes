@@ -28,24 +28,21 @@
 			    $nid=$field->content;
 	    else:
         //print $fname; // uncomment this to show the field name.
-        if ($fname == "field-start-date-value" ):
-              print '<p class="hsDate"><span class="hsDateDay">' .(module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : oustyle_views_content($nid,$field->content)). '</span>';
-	      endif;
-	
-	      if ($fname == "field-start-date-value-1" ):
-              print '<span class="hsDateMonth">' . (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : oustyle_views_content($nid,$field->content)) . '</span></p>';
-	      endif;
-        if ($fname == "field-image-fid" && !empty($field->content)):
-	        print (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : oustyle_views_content($nid,$field->content));
-        endif;
-	
-	      if ($fname == "title" ):
-              print '<h3>' . (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : oustyle_views_content($nid,$field->content)) . '</h3>';
-	      endif;
-	
-        if ($fname == "field-teaser-text-value" ):
-            print '<p>' . (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : oustyle_views_content($nid,$field->content)) . '</p>';
-        endif;
+         if ($fname == "field-schemaorg-date" ):
+                       print '<p class="ou-date"><span class="ou-dateday">' .(module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : str_replace("(All day)","",$field->content)). '</span>';
+         	      endif;
+         	      if ($fname == "field-schemaorg-date-1" ):
+                       print '<span class="ou-datemonth">' . (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : str_replace("(All day)","",$field->content)) . '</span></p>';
+         	      endif;
+              if ($fname == "field-location" ):
+                     print 'Location: '.$field->content;
+                 endif;
+         	      if ($fname == "title" ):
+                       print '<h3>' . $field->content . '</h3>';
+         	      endif;
+                 if ($fname == "field-schemaorg-description" ):
+                     print (module_exists('oubrand') ? oubrand_remove_ou_tokens($field->content) : $field->content);
+                 endif;
 	    endif;
      endforeach; ?>
     <br class="clear" />

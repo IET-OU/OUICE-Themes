@@ -1,5 +1,12 @@
 <?php
-// $Id: edit-block.tpl.php,v 3.0 2011/05/19 09:00:00 laustin (07779 146104) $
+/**
+ * @file
+ * The theme system, which controls the output of Drupal.
+ *
+ * The theme system allows for nearly all output of the Drupal system to be
+ * customized by user themes.
+ */
+// $Id: edit-block.tpl.php,v 3.1 2012/06/29 09:00:00 laustin (07779 146104) $
 ?>
 <!-- start edit-block.tpl.php -->
 <?php
@@ -7,10 +14,9 @@
 		(($block->module == "block") && (user_access('administer blocks'))) ||
 		(($block->module == "views") && (user_access('administer views'))) ||
 		(($block->module == "oubrand") && (user_access('administer oubrand')))
-	):?>
-
-	<div class="administer-block-links administer-block-hide">
-		<a href="<?php print check_url(base_path()) ?>admin/build/block/configure/<?php print $block->module;?>/<?php print $block->delta;?>">Edit this block</a>
-	</div>
-<?php endif; ?>
+	){
+		print '<div class="administer-block-links administer-block-hide">';
+		print '<a href="'.check_url(base_path()).'admin/structure/block/manage/'.$block->module.'/'.$block->delta.'">Edit this block</a>';
+		print '</div>';
+	}; ?>
 <!-- /end edit-block.tpl.php -->

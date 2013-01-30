@@ -1,7 +1,7 @@
 <?php
-// $Id: views-view-fields.tpl,v 3.0 2010/10/25 09:00:00 laustin and PConolly IPP $
+// $Id: views-view-unformatted.tpl,v 1.0 2010/09/28 09:00:00 laustin $
 /**
- * @file views-view-unformatted.tpl.php
+ * @file
  * Default simple view template to display a list of rows.
  *
  * @ingroup views_templates
@@ -10,8 +10,8 @@
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
-  <ul class="ou-events">
-  <?php foreach ($rows as $id => $row): ?>
-      <?php print $row; ?>
-  <?php endforeach; ?>
-  </ul>
+<ul class="ou-events">
+<?php foreach ($rows as $id => $row): ?>
+    <?php print $row; ?>
+<?php endforeach; ?>
+</ul>

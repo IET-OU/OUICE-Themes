@@ -36,7 +36,7 @@
 	        print (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : $field->content);
         endif;
         if ($fname == "field-teaser-text-value"):
-	        print '<p>' . (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : $field->content) . '</p>';
+	        print (module_exists('oubrand') ? oubrand_views_content($nid,$field->content) : $field->content);
         endif;
       endif;
       endforeach; ?>
