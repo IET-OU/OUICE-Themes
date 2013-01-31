@@ -14,8 +14,8 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
   	//$val .= '1';
   	//print 'mobile';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/modernizr.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-1.8.2.js"></script>';
-  	print '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
+  	//print '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
+  	print '<script src="'.$base_url . '/' . path_to_theme().'/scripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto-min.js"></script>';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.min.js"></script>';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto.flickable.min.js"></script>';
@@ -23,19 +23,8 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
   else {
     //print 'desktop';
     //Not Mobile devive
-  	//$val .= '0';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/modernizr.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-min.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-1.8.2.js"></script>';
-  	print '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto-min.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.min.js"></script>';
+  	print '<script src="'.$base_url . '/' . path_to_theme().'/scripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.jquery.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.jquery.min.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto.flickable.min.js"></script>';
-  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/misc/jquery.js"></script>';
 
   };
 ?>
