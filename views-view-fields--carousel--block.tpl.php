@@ -44,11 +44,13 @@ $i = 1;
 							//                 print $row->field_body[0]['rendered']['#markup'];
 							//               };
 							//print '</div>';
-							//if(!empty($row->field_field_link)){
-							//	print '<a href="' . $row->field_field_link[0]['raw']['url'] . '">' . $field->content . '</a>';
-							//} else {
+							if(!empty($row->field_data_field_link_node_entity_type)){
+							  //print '1';
+								print '<a href="' . $row->field_field_link[0]['raw']['url'] . '">' . $field->content . '</a>';
+							} else {
+							  //print '2';
 								print $field->content;
-							//};
+							};
 							//print '</div>';
 						//};
 
@@ -56,6 +58,9 @@ $i = 1;
 				</li>
 <?php 
 		};
+		// if ($fname == "field-link"){
+		//      print $field->content;
+		//    }
 		//print $i;
 		$i = $i + 1;
      endforeach; ?>

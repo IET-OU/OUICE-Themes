@@ -7,7 +7,7 @@
  * The theme system allows for nearly all output of the Drupal system to be
  * customized by user themes.
  */
-function ou_ouice3_d7_form_system_theme_settings_alter(&$form, &$form_state) {
+function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
   // Create header and footer form, Forms API
   $form['header_choice'] = array(
     '#type' => 'radios',

@@ -23,7 +23,7 @@ features[] = favicon
 features[] = main_menu
 features[] = secondary_menu
 
-; $Id: ou_ouice3_d7.info : v 1.0.0 2012/08/07  laustin $
+; $Id: ou_ouice3.info : v 1.0.0 2012/08/07  laustin $
 version = "7.14"
 project = "drupal"
 datestamp = "1335997555"

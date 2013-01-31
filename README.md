@@ -1,4 +1,0 @@
-OUICE-Themes
-============
-
-OUICE Themes

@@ -12,7 +12,7 @@
  * DEVELOPMENT USE ONLY - COMMENT OUT FOR PRODUCTION
  */
 //
-drupal_theme_rebuild();
+//drupal_theme_rebuild();
 
 global $base_url;
 
@@ -24,7 +24,7 @@ global $base_url;
 //   }
 // }
 
-function ou_ouice3_d7_preprocess_page(&$variables, $hook) {
+function ou_ouice3_preprocess_page(&$variables, $hook) {
    // Page template suggestions based off of content types
    if (isset($variables['node'])) { 
                 $variables['theme_hook_suggestions'][] = 'page__type__'. $variables['node']->type;
@@ -45,7 +45,7 @@ function ou_ouice3_d7_preprocess_page(&$variables, $hook) {
    
 }
 // 
-// function ou_ouice3_d7_preprocess_page(&$vars) {
+// function ou_ouice3_preprocess_page(&$vars) {
 //   $vars['tabs2'] = menu_secondary_local_tasks();
 //   if ($node = menu_get_object()) {
 //     
@@ -217,9 +217,9 @@ function phptemplate_get_nav_type() {
  *   An array containing the breadcrumb links.
  * @return a string containing the breadcrumb output.
  */
- //ou_ouice3_d7_
+ //ou_ouice3_
 
-function ou_ouice3_d7_breadcrumb($variables) {
+function ou_ouice3_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   $get_site_name = variable_get('site_name', "Default site name");
   $themed_breadcrumb = '<ol class="ou-ancestors">';
@@ -258,7 +258,7 @@ function ou_ouice3_d7_breadcrumb($variables) {
  * @return string
  *   HTML for the themed breadcrumb.
  */
-function ou_ouice3_d7_easy_breadcrumb($variables) {
+function ou_ouice3_easy_breadcrumb($variables) {
 
   $breadcrumb = $variables['breadcrumb'];
   $segments_quantity = $variables['segments_quantity'];
@@ -284,7 +284,7 @@ function ou_ouice3_d7_easy_breadcrumb($variables) {
   return $html;
 }
 
-function ou_ouice3_d7_item_list($variables) {
+function ou_ouice3_item_list($variables) {
 
   $items = $variables['items'];
   $title = $variables['title'];
@@ -354,7 +354,7 @@ function ou_ouice3_d7_item_list($variables) {
  *
  *
  */
-function ou_ouice3_d7_pager($variables) {
+function ou_ouice3_pager($variables) {
   $tags = $variables['tags'];
   $element = $variables['element'];
   $parameters = $variables['parameters'];
@@ -520,7 +520,7 @@ function ssphptemplate_views_mini_pager($tags = array(), $limit = 10, $element =
  *
  * @ingroup themeable
  */
-//function ou_ouice3_d7_menu_local_tasks() {
+//function ou_ouice3_menu_local_tasks() {
 //  return menu_primary_local_tasks();
 //}
 
@@ -545,7 +545,7 @@ function ssphptemplate_views_mini_pager($tags = array(), $limit = 10, $element =
  * USED to output correct OUICE structure and classes
  * Removes class="menu"
  */
-function ou_ouice3_d7_menu_tree($variables) {
+function ou_ouice3_menu_tree($variables) {
   if (phptemplate_get_nav_type() == 'ou-full-nav'):
     return '<ul><li><ul>' . $variables['tree'] . '</ul></li></ul>';
   else:
@@ -558,7 +558,7 @@ function ou_ouice3_d7_menu_tree($variables) {
  * USED to output correct OUICE structure and classes
  *
  */
-function ou_ouice3_d7_menu_link(array $variables) {
+function ou_ouice3_menu_link(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
 
@@ -582,7 +582,7 @@ function ou_ouice3_d7_menu_link(array $variables) {
  * USED to output correct OUICE structure and classes
  *
  */
-function ou_ouice3_d7_menu_local_task($variables) {
+function ou_ouice3_menu_local_task($variables) {
   $link = $variables['element']['#link'];
   $link_text = $link['title'];
 
@@ -657,7 +657,7 @@ function ou_ouice3_d7_menu_local_task($variables) {
 /**
  * Add ou-pure body class if region2 is empty
  */
-function ou_ouice3_d7_preprocess_html(&$variables) {
+function ou_ouice3_preprocess_html(&$variables) {
   if(empty($variables['page']['region2'])) {
     $variables['classes_array'][] = 'ou-pure';
   }
