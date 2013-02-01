@@ -13,22 +13,13 @@
  */
 //
 //drupal_theme_rebuild();
-
 global $base_url;
-
-
-// function themeName_preprocess_page(&$vars, $hook) {
-//   if (isset($vars['node'])) {
-//   // If the node type is "blog" the template suggestion will be "page--blog.tpl.php".
-//    $vars['theme_hook_suggestions'][] = 'page__'. str_replace('_', '--', $vars['node']->type);
-//   }
-// }
 
 function ou_ouice3_preprocess_page(&$variables, $hook) {
    // Page template suggestions based off of content types
    if (isset($variables['node'])) { 
-                $variables['theme_hook_suggestions'][] = 'page__type__'. $variables['node']->type;
-                $variables['theme_hook_suggestions'][] = "page__node__" . $variables['node']->nid;
+    $variables['theme_hook_suggestions'][] = 'page__type__'. $variables['node']->type;
+    $variables['theme_hook_suggestions'][] = "page__node__" . $variables['node']->nid;
    }
    
    // Page template suggestions based off URL alias
@@ -44,51 +35,7 @@ function ou_ouice3_preprocess_page(&$variables, $hook) {
   }
    
 }
-// 
-// function ou_ouice3_preprocess_page(&$vars) {
-//   $vars['tabs2'] = menu_secondary_local_tasks();
-//   if ($node = menu_get_object()) {
-//     
-//     $vars['node'] = $node;
-//       if (isset($vars['node'])) {
-//       // If the node type is "blog" the template suggestion will be "page--blog.tpl.php".
-//        $vars['theme_hook_suggestions'][] = 'page__'. str_replace('_', '--', $vars['node']->type);
-//       }
-//     $suggestions = array();
-//     
-//     if (drupal_is_front_page()):
-//       $template_filename = 'page';
-//       $template_filename = $template_filename . '-front';
-//       $suggestions[] = $template_filename;
-//       //$vars['theme_hook_suggestions'][] = $template_filename;
-//     else:
-//       $template_filename = 'page';
-//       $template_filename = $template_filename . '-' . $vars['node']->type;
-//       $suggestions[] = $template_filename;
-//     endif;
-//     //$vars['template_files'] = $suggestions;
-//     $vars['theme_hook_suggestions'] = $suggestions;
-//   }
-//   // Hook into color.module
-//   if (module_exists('color')) {
-//     _color_page_alter($vars);
-//   }
-//   if ($blocks = block_get_blocks_by_region('region0')) {
-//     $variables['region0'] = $blocks;
-//   }
-//   if ($blocks = block_get_blocks_by_region('region1')) {
-//     $variables['region1'] = $blocks;
-//   }
-//   if ($blocks = block_get_blocks_by_region('region2')) {
-//     $variables['region2'] = $blocks;
-//   }
-//   if ($blocks = block_get_blocks_by_region('region3')) {
-//     $variables['region3'] = $blocks;
-//   }
-//   if ($blocks = block_get_blocks_by_region('region100')) {
-//     $variables['region100'] = $blocks;
-//   }
-// }
+
 /**
  * Allow themable wrapping of all comments.
  */
@@ -209,7 +156,6 @@ function phptemplate_get_nav_type() {
   return $nav_class;
 }
 
-
 /**
  * Return a themed breadcrumb trail.
  *
@@ -242,8 +188,6 @@ function ou_ouice3_breadcrumb($variables) {
     return $themed_breadcrumb;
   }
 }
-
-
 
 /**
  * Theme function for the breadcrumb.
@@ -513,33 +457,6 @@ function ssphptemplate_views_mini_pager($tags = array(), $limit = 10, $element =
   }
 }
 
-
-/**
- * Returns the rendered local tasks. The default implementation renders
- * them as tabs. Overridden to split the secondary tasks.
- *
- * @ingroup themeable
- */
-//function ou_ouice3_menu_local_tasks() {
-//  return menu_primary_local_tasks();
-//}
-
-
-// function phptemplate_comment_submitted($comment) {
-//   return t('!datetime — !username',
-//     array(
-//       '!username' => theme('username', $comment),
-//       '!datetime' => format_date($comment->timestamp)
-//     ));
-// }
-// function phptemplate_node_submitted($node) {
-//   return t('!datetime — !username',
-//     array(
-//       '!username' => theme('username', $node),
-//       '!datetime' => format_date($node->created),
-//     ));
-// }
-
 /**
  * Generate the HTML output for a menu tree
  * USED to output correct OUICE structure and classes
@@ -576,7 +493,6 @@ function ou_ouice3_menu_link(array $variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
-
 /**
  * Generate the HTML output for a single local task link.
  * USED to output correct OUICE structure and classes
@@ -601,58 +517,6 @@ function ou_ouice3_menu_local_task($variables) {
 
   return '<li' . (!empty($variables['element']['#active']) ? ' class="current active"' : '') . '>' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
 }
-
-/**
- *
- * @get the full url of page
- * @return string
- *
- */
-// function oustyle_getAddress() {
-//   /*** check for https ***/
-//   $protocol = $_SERVER['HTTPS'] == 'on' ? 'https' : 'http';
-//   /*** return the full address ***/
-//   return $protocol . '://' . $_SERVER['HTTP_HOST'] . request_uri();
-// }
-
-/**
- * Current active Primary Nav.
- * USED to output give context menus correct titles
- *
- * @param $links
- *   A keyed array of links to be themed.
- * @return
- *   A string containing current active primary link.
- */
-// function oustyle_activeprimary($links) {
-// print 'links: ' . $links;
-// 	print_r($links);
-// 	
-//   $_active_primary = '';
-//   if (count($links) == 0) :// check for invalid link count
-//     $links = menu_navigation_links('main-menu', 0); //menu_primary_links();
-//   endif;
-//   global $base_url;
-//   $_get_path = explode('/', str_replace($base_url, "", oustyle_getAddress()));
-//   if (count($links) > 0) {
-//     $num_links = count($links);
-//     $i = 1;
-//     foreach ($links as $key => $link) {
-//       $gethref = explode('/', $link['href']);
-//       $evalNodeHref = node_load($gethref[1]);
-//       global $base_url;
-//       if (($link['href'] == $_GET['q'] || ($link['href'] == '<front>' && drupal_is_front_page())) &&
-//         (empty($options['language']) || $options['language']->language == $language->language) ||
-//         ($_get_path[1] == $evalNodeHref->path && menu_path_is_external($link['href']) == FALSE &&
-//           drupal_lookup_path(alias, $path = $link['href'], $path_language  = '') != '' ) ) {
-// 
-//         $_active_primary = ($link['title']);
-//       }
-//     }
-//   }
-//   return $_active_primary;
-// }
-
 
 /**
  * Add ou-pure body class if region2 is empty

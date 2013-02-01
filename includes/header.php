@@ -15,7 +15,7 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
   	//print 'mobile';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/modernizr.js"></script>';
   	//print '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
-  	print '<script src="'.$base_url . '/' . path_to_theme().'/scripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
+  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-min.js" charset="utf-8"></script>';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto-min.js"></script>';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.min.js"></script>';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto.flickable.min.js"></script>';
@@ -23,7 +23,7 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
   else {
     //print 'desktop';
     //Not Mobile devive
-  	print '<script src="'.$base_url . '/' . path_to_theme().'/scripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
+  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-min.js" charset="utf-8"></script>';
   	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.js"></script>';
 
   };
@@ -69,4 +69,3 @@ if (phptemplate_get_faculty_classes() != 'none'){
 print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/faculties.css" rel="stylesheet" type="text/css" media="screen" />';
 print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/facultymobile.css" rel="stylesheet" type="text/css" media="screen" />';
 }
-//print $head;
