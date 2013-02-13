@@ -24,42 +24,18 @@
 $i = 1;
 //print_r($fields); ?>
 
-<?php foreach ($fields as $id => $field): ?>
-  
-  <?php
+<?php foreach ($fields as $id => $field){
   $fname=$field->class;
   if ($fname == "nid" && empty($nid)){
     $nid=$field->content;
   }
   else {
     //print $fname; // uncomment this to show the field name.
-    if ($fname == "field-image"){ ?>
-      <li class="<?php print $i; ?>"> 
-      <?php //print_r($row);
-      if(!empty($row->field_data_field_link_node_entity_type)){
-        // If CT is Caoursel_item then use field_link otherwise link to node
-        // if($row->_field_data['nid']['entity']->type){
-        //           if($row->_field_data['nid']['entity']->type == 'carousel_item') {
-        //               //print '<a href="' . $row->field_field_link[0]['raw']['url'] . '">' . $field->content . '</a>';
-        //               print $row->field_field_link[0]['raw']['url'];
-        //             }
-        //             else {
-        //               //print_r($row->_field_data['nid']['entity']->type);
-        //               //print 'here: ' . $row->_field_data->nid->entity['type']  . ':gfd';
-        //               //print '<a href="' . $row->field_field_link[0]['raw']['url'] . '">' . $field->content . '</a>';
-        //               //print $field->content;
-        //             }
-        //        }
-        
-        print $field->content;
-        
-      }
-      else {
-        print $field->content;
-      };
-    };?>
-</li>
-<?php 
-};
-$i = $i + 1;
-endforeach; ?>
+    if ($fname == "field-image"){
+      print '<li class="' . $i . '">';
+      print $field->content;
+      print '</li>';
+    };
+  };
+  $i = $i + 1;
+};?>
