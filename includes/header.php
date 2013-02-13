@@ -6,6 +6,7 @@
  *
  */
 global $base_url;
+$path_to_base_theme = drupal_get_path('theme','ou_ouice3');
 ?>
 <?php
 $useragent = $_SERVER['HTTP_USER_AGENT'];
@@ -15,10 +16,10 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
   	//print 'mobile';
   	//print '<script type="text/javascript" src="' . drupal_get_path('theme', 'ou_ouice3') . '/scripts/modernizr.js"></script>';
   	//print '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
-  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/jquery-min.js" charset="utf-8"></script>';
-  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/zepto-min.js"></script>';
-  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/flux.min.js"></script>';
-  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/zepto.flickable.min.js"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . $path_to_base_theme . '/scripts/jquery-min.js" charset="utf-8"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . $path_to_base_theme . '/scripts/zepto-min.js"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . $path_to_base_theme . '/scripts/flux.min.js"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . $path_to_base_theme . '/scripts/zepto.flickable.min.js"></script>';
   }
   else {
     //print 'desktop';
@@ -27,8 +28,8 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
     //drupal_get_path('theme', 'ou_research') . '/styles/sub-style_ie8.css'
   	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-min.js" charset="utf-8"></script>';
   	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.js"></script>';
-  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/jquery-min.js" charset="utf-8"></script>';
-  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/flux.js"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . $path_to_base_theme . '/scripts/jquery-min.js" charset="utf-8"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . $path_to_base_theme . '/scripts/flux.js"></script>';
 
   };
 ?>
@@ -44,13 +45,13 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
   <link rel="stylesheet" type="text/css" href="/includes/ouice/3/ie6.css" />
 <![endif]-->
 <!--[if IE 8]>
-  <link href="<?php print $base_url . '/' . path_to_theme(); ?>/styles/style_ie8.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="<?php print $base_url . '/' . $path_to_base_theme; ?>/styles/style_ie8.css" rel="stylesheet" type="text/css" media="screen" />
 <![endif]-->
 <!--[if IE 7]>
-  <link href="<?php print $base_url . '/' . path_to_theme(); ?>/styles/style_ie7.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="<?php print $base_url . '/' . $path_to_base_theme; ?>/styles/style_ie7.css" rel="stylesheet" type="text/css" media="screen" />
 <![endif]-->
 <!--[if IE 6]>
-  <link href="<?php print $base_url . '/' . path_to_theme(); ?>/styles/style_ie6.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="<?php print $base_url . '/' . $path_to_base_theme; ?>/styles/style_ie6.css" rel="stylesheet" type="text/css" media="screen" />
 <![endif]-->
 
 <meta name="viewport" content="width:device-width; initial-scale:1" />
@@ -70,7 +71,7 @@ echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/includes/ouice/3/mobile
 <?php
 // Ouput faculties styles if option has been selected with theme config area
 if (phptemplate_get_faculty_classes() != 'none'){
-  print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/faculties.css" rel="stylesheet" type="text/css" media="screen" />';
-  print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/facultymobile.css" rel="stylesheet" type="text/css" media="screen" />';
+  print '<link href="' . $base_url . '/' . $path_to_base_theme . '/styles/faculties.css" rel="stylesheet" type="text/css" media="screen" />';
+  print '<link href="' . $base_url . '/' . $path_to_base_theme . '/styles/facultymobile.css" rel="stylesheet" type="text/css" media="screen" />';
 }
-print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/socialcount.css" rel="stylesheet" type="text/css" media="screen" />';
+print '<link href="' . $base_url . '/' . $path_to_base_theme . '/styles/socialcount.css" rel="stylesheet" type="text/css" media="screen" />';

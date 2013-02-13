@@ -51,7 +51,7 @@ $i = 1;
         //             }
         //        }
         
-        $field->content;
+        print $field->content;
         
       }
       else {
