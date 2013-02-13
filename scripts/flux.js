@@ -407,7 +407,16 @@ window.flux = {
 			if(this.options.captions && this.captionBar)
 			{
 				if(str !== "")
-					this.captionBar.html(str);
+				
+				  if($(this.getImage(this.currentImageIndex)).data('href'))
+    			{
+    			  this.captionBar.html("<a href=\"" + $(this.getImage(this.currentImageIndex)).data('href') + "\">" + str + "</a>");
+    		  }
+    			else {
+    			  this.captionBar.html(str);
+  			}
+  			
+					//this.captionBar.html(str);
 					
 				this.captionBar.css('opacity', str === "" ? 0 : 1);
 			}

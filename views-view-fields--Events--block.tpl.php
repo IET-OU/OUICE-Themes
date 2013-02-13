@@ -40,7 +40,7 @@
          	      if ($fname == "title" ):
                        print '<h3>' . $field->content . '</h3>';
          	      endif;
-                 if ($fname == "field-schemaorg-description" ):
+                 if ($fname == "field-schemaorg-description"):
                      print (module_exists('oubrand') ? oubrand_remove_ou_tokens($field->content) : $field->content);
                  endif;
 	    endif;

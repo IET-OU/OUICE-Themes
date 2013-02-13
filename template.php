@@ -519,10 +519,16 @@ function ou_ouice3_menu_local_task($variables) {
 }
 
 /**
+ * OU_PURE CLASS
  * Add ou-pure body class if region2 is empty
+ *
  */
 function ou_ouice3_preprocess_html(&$variables) {
   if(empty($variables['page']['region2'])) {
     $variables['classes_array'][] = 'ou-pure';
+  }
+  //add socialcount class to body for certain pages / content types
+  if(drupal_is_front_page()) {
+    $variables['classes_array'][] = 'has-sc';
   }
 }

@@ -9,3 +9,4 @@
 <?php print $scripts; ?>
 <script type="text/javascript" src="/includes/ouice/3/scripts.js"></script>
 <script type="text/javascript" src="<?php print $base_url . '/' . path_to_theme(); ?>/scripts/plugin.js"></script>
+<script type="text/javascript" src="<?php print $base_url . '/' . path_to_theme(); ?>/scripts/socialcount.js"></script>

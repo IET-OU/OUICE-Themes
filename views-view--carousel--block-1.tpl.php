@@ -57,7 +57,7 @@
 				<a href="#hambone" class="next">Next</a> 
 				<a href="#hambone" class="prev disabled">Prev</a> 
 			</ul>
-      		<div class="slidewrap" style="display:noe;"> 
+      		<div class="slidewrap" style="display:none;"> 
 				<ol class="slider" id="hambone">
     				<?php print $rows; ?>
 				</ol> 

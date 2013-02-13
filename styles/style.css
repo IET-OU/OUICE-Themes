@@ -223,6 +223,7 @@ div.ou-pink a.action {background-image:url("../images/arrow-off-pink.gif");}
 div.ou-violet a.action:hover{background-image:url("../images/arrow-on-violet.gif");}
 div.ou-violet a.action {background-image:url("../images/arrow-off-violet.gif");}
 
+
 /*
 =============================================================================
 	OUICE - MISC
@@ -810,3 +811,36 @@ img.thumbimg:hover{
 }
 /*end of slideshow 4*/
 /*end of slideshow*/
+
+a.ou-action {
+  padding: 1em 1.8em 1em 0 !important;
+}
+
+/*
+====================================================================
+H1 and Social Count
+====================================================================
+*/
+body.has-sc h1 {
+  float:left !important;
+  width:85% !important;
+  background-image: none;
+  border-bottom: 0 solid #e5e5e5;
+}
+body.has-sc div.sc-container {
+  float:right !important;
+  padding: 1em 0 1em 1em;
+}
+
+.caption a {
+  color:#ffffff !important;
+}
+
+.caption a:hover,
+.caption a:visited:hover {
+  color:#f3ccd6 !important;
+}
+
+.more-link {
+  padding-bottom: 1em;
+}

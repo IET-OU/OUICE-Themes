@@ -13,18 +13,22 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
   	//Mobile device
   	//$val .= '1';
   	//print 'mobile';
-  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/modernizr.js"></script>';
+  	//print '<script type="text/javascript" src="' . drupal_get_path('theme', 'ou_ouice3') . '/scripts/modernizr.js"></script>';
   	//print '<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>';
-  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-min.js" charset="utf-8"></script>';
-  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto-min.js"></script>';
-  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.min.js"></script>';
-  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/zepto.flickable.min.js"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/jquery-min.js" charset="utf-8"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/zepto-min.js"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/flux.min.js"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/zepto.flickable.min.js"></script>';
   }
   else {
     //print 'desktop';
     //Not Mobile devive
-  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-min.js" charset="utf-8"></script>';
-  	print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.js"></script>';
+    //drupal_get_path('theme', 'ou_ouice3') . '/scripts/'
+    //drupal_get_path('theme', 'ou_research') . '/styles/sub-style_ie8.css'
+  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/jquery-min.js" charset="utf-8"></script>';
+  	//print '<script type="text/javascript" src="'.$base_url . '/' . path_to_theme().'/scripts/flux.js"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/jquery-min.js" charset="utf-8"></script>';
+  	print '<script type="text/javascript" src="' . $base_url . '/' . path_to_theme() . '/scripts/flux.js"></script>';
 
   };
 ?>
@@ -49,7 +53,7 @@ $useragent = $_SERVER['HTTP_USER_AGENT'];
   <link href="<?php print $base_url . '/' . path_to_theme(); ?>/styles/style_ie6.css" rel="stylesheet" type="text/css" media="screen" />
 <![endif]-->
 
-<meta name="viewport" content="width=device-width; initial-scale=1" />
+<meta name="viewport" content="width:device-width; initial-scale:1" />
 <?php if(isset($_REQUEST['OUMOBILE'])){
 echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/includes/headers-footers/ou-header-mob.css\">";
 echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/includes/ouice/3/mobile.css\">";
@@ -66,6 +70,7 @@ echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"/includes/ouice/3/mobile
 <?php
 // Ouput faculties styles if option has been selected with theme config area
 if (phptemplate_get_faculty_classes() != 'none'){
-print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/faculties.css" rel="stylesheet" type="text/css" media="screen" />';
-print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/facultymobile.css" rel="stylesheet" type="text/css" media="screen" />';
+  print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/faculties.css" rel="stylesheet" type="text/css" media="screen" />';
+  print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/facultymobile.css" rel="stylesheet" type="text/css" media="screen" />';
 }
+print '<link href="' . $base_url . '/' . path_to_theme() . '/styles/socialcount.css" rel="stylesheet" type="text/css" media="screen" />';
