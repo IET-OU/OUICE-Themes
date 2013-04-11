@@ -57,34 +57,23 @@ function phptemplate_get_ia() {
   // Set header and footer paths based on selection made in theme config settings
   // Normal path when on live server is 'includes/xxx'
   switch (theme_get_setting('header_choice')) {
-  case "ou-ia-about" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
-  case "ou-ia-study" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
-  case "ou-ia-research" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
-  case "ou-ia-community" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
-  case "ou-ia-learning" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
   case "legacy" :
     $header_selection = '/var/www/html/includes/header-centre-09.html';
     $footer_selection = '/var/www/html/includes/footer-09.html';
+    break;
+  case "intranet" :
+    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
+    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
     break;
   case "none" :
     $header_selection = '';
     $footer_selection = '';
     break;
+  case "ou-ia-about" :
+  case "ou-ia-study" :
+  case "ou-ia-research" :
+  case "ou-ia-community" :
+  case "ou-ia-learning" :
   default:
     $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
     $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
