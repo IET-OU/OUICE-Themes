@@ -14,6 +14,23 @@ div.links ul.links li a {border-bottom:1px solid #EEEEEE;display:inline;padding:
 .relative{position:relative;}
 .absolute{position:absolute;}
 .fullwidth{width: 100%;}
+
+/*for maintenance page*/
+body.ou-sections.maintenance-page div#ou-page {
+  padding: .5em 1.5em;
+  margin: 0;
+  background-color: 
+  #fff;
+  border: 1px solid 
+  #bbd8e7;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 3px 3px #eee;
+  -webkit-box-shadow: 0 3px 3px #eee;
+  box-shadow: 0 3px 3px #eee;
+  overflow: hidden;
+}
 /*delete ul {list-style:none outside none;}*/
 /*
 =============================================================================
@@ -816,21 +833,7 @@ a.ou-action {
   padding: 1em 1.8em 1em 0 !important;
 }
 
-/*
-====================================================================
-H1 and Social Count
-====================================================================
-*/
-body.has-sc h1 {
-  float:left !important;
-  width:85% !important;
-  background-image: none;
-  border-bottom: 0 solid #e5e5e5;
-}
-body.has-sc div.sc-container {
-  float:right !important;
-  padding: 1em 0 1em 1em;
-}
+
 
 .caption a {
   color:#ffffff !important;

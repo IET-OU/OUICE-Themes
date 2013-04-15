@@ -1,5 +1,5 @@
 <?php
-// $Id: page.tpl.php,v 3.1 2012/06/29 09:00:00 laustin $
+// $Id: page.tpl.php,v 1.0.1 2013/02/28 09:00:00 laustin $
 /**
 * @file
 * page.tpl.php default page layout
@@ -7,13 +7,13 @@
 * written by Lee Austin - +44 (0)7779 146104
 */
 ?>
-<div id="ou-site">
+<!-- <div id="ou-site"> //-->
   <div id="ou-site-header">
-    <?php if ($site_name || $site_slogan){
+    <?php if ($site_name || $site_slogan || $logo){
       print '<div id="ou-site-ident">';
       print ($logo ? '<img class="go2" src="'. check_url($logo) .'" alt="'. $site_name .'" id="logo" />' : "");
-      print '<p id="ou-site-title">'. $site_name .'</p>';
-      print '<p id="ou-site-description">'. $site_slogan .'</p>';
+      print ($site_name ? '<p id="ou-site-title">' . $site_name . '</p>' : '');
+      print ($site_slogan ? '<p id="ou-site-description">'. $site_slogan .'</p>' : '');
       print '</div>';
     }; ?>
     <!-- Start of site-header -->
@@ -64,4 +64,4 @@
   <div id="ou-site-footer">
     <a href="#ou-content" class="ou-to-top">Back to top</a>
    </div>
-</div>
+<!-- </div> //-->

@@ -6,7 +6,9 @@
  * Javascript at bottom for performance (except OU header script - this must be at top)
  */
 ?>
-<?php print $scripts; ?>
+<?php //print $scripts; ?>
 <script type="text/javascript" src="/includes/ouice/3/scripts.js"></script>
 <script type="text/javascript" src="<?php print $base_url . '/' . $path_to_base_theme; ?>/scripts/plugin.js"></script>
-<script type="text/javascript" src="<?php print $base_url . '/' . $path_to_base_theme; ?>/scripts/socialcount.js"></script>
+<!-- <script type="text/javascript" src="<?php //print $base_url . '/' . $path_to_base_theme; ?>/scripts/socialcount.js"></script>
+<script type="text/javascript" src="<?php //print $base_url . '/' . $path_to_base_theme; ?>/scripts/socialite.min.js"></script> //-->
+

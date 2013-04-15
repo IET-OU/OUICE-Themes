@@ -47,10 +47,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=8" />
 <?php print $head; ?>
 <title><?php print $head_title; ?></title>
-<?php print $styles; ?>
-<?php //print $scripts; ?>
 <?php  // get the common header elements (This can be called by all page templates)
 include('includes/header.php'); ?>
+<?php print $styles; ?>
+<?php print $scripts; ?>
+
 </head>
 <body class="ou-mobile <?php print phptemplate_get_body_classes(); ?> <?php print phptemplate_get_faculty_classes(); ?> <?php print phptemplate_get_ia_classes(); ?> <?php print $classes; ?>" <?php print $attributes;?>>
   <div id="ou-org">

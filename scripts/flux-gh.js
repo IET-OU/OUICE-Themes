@@ -419,6 +419,27 @@ window.flux = {
           this.setNextIndex(this.currentImageIndex+1);
       this.updateCaption();
     },
+    
+    // updateCaption: function() {
+    //      var str = $(this.getImage(this.currentImageIndex)).attr('title');
+    //      if(this.options.captions && this.captionBar)
+    //      {
+    //        if(str !== "")
+    //        
+    //          if($(this.getImage(this.currentImageIndex)).data('href'))
+    //          {
+    //            this.captionBar.html("<a href=\"" + $(this.getImage(this.currentImageIndex)).data('href') + "\">" + str + "</a>");
+    //          }
+    //          else {
+    //            this.captionBar.html(str);
+    //        }
+    //        
+    //          //this.captionBar.html(str);
+    //          
+    //        this.captionBar.css('opacity', str === "" ? 0 : 1);
+    //      }
+    //    },
+    
     updateCaption: function() {
       var str = $(this.getImage(this.currentImageIndex)).attr('title');
       if(this.options.captions && this.captionBar)

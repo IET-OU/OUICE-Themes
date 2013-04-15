@@ -47,6 +47,8 @@ function phptemplate_comment_wrapper($content, $node) {
     return '<div id="comments"><h2 class="comments">' . t('Comments') . '</h2>' . $content . '</div>';
   }
 }
+
+
 /**
  * THEME SETTINGS
  * Return Header and Footer pair selection which is made in theme-settings.
@@ -174,7 +176,7 @@ function ou_ouice3_breadcrumb($variables) {
     // Provide a navigational heading to give context for breadcrumb links to
     // screen-reader users. Make the heading invisible with .element-invisible.
 	$breadcrumb[] = drupal_get_title();
-    $breadcrumb[0] = l(($get_site_name ? 'llsss' : "Home"), NULL);
+    $breadcrumb[0] = l(($get_site_name ? $get_site_name : "Home"), NULL);
 
 	$array_size = count($breadcrumb);
     $i = 0;
@@ -411,51 +413,51 @@ function ou_ouice3_pager($variables) {
 
 /* Standard view mini pager function with the addtions of label changes and a dive wrapping
  *
- *
+ * DELETE
  *
  */
-function ssphptemplate_views_mini_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
-  global $pager_page_array, $pager_total;
-
-  // Calculate various markers within this pager piece:
-  // Middle is used to "center" pages around the current page.
-  $pager_middle = ceil($quantity / 2);
-  // current is the page we are currently paged to
-  $pager_current = $pager_page_array[$element] + 1;
-  // max is the maximum page number
-  $pager_max = $pager_total[$element];
-  // End of marker calculations.
-
-
-  $li_previous = theme('pager_previous', (isset($tags[1]) ? $tags[1] : t('Prev')), $limit, $element, 1, $parameters);
-  if (empty($li_previous)) {
-    $li_previous = "&nbsp;";
-  }
-
-  $li_next = theme('pager_next', (isset($tags[3]) ? $tags[3] : t('Next')), $limit, $element, 1, $parameters);
-  if (empty($li_next)) {
-    $li_next = "&nbsp;";
-  }
-
-  if ($pager_total[$element] > 1) {
-    $items[] = array(
-      'class' => 'pager-previous',
-      'data' => $li_previous,
-    );
-
-    //$items[] = array(
-    //  'class' => 'pager-current',
-    //  'data' => t('@current of @max', array('@current' => $pager_current, '@max' => $pager_max)),
-    //);
-
-    $items[] = array(
-      'class' => 'pager-next',
-      'data' => $li_next,
-    );
-    $_page_count = t('@current of @max', array('@current' => $pager_current, '@max' => $pager_max));
-    return '<div class="ou-paged"><p>Page ' . $_page_count . '</p>' . theme('item_list', $items, NULL, 'ul', array('class' => 'pager'), 'paged') . '</div>';
-  }
-}
+// function ssphptemplate_views_mini_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
+//   global $pager_page_array, $pager_total;
+// 
+//   // Calculate various markers within this pager piece:
+//   // Middle is used to "center" pages around the current page.
+//   $pager_middle = ceil($quantity / 2);
+//   // current is the page we are currently paged to
+//   $pager_current = $pager_page_array[$element] + 1;
+//   // max is the maximum page number
+//   $pager_max = $pager_total[$element];
+//   // End of marker calculations.
+// 
+// 
+//   $li_previous = theme('pager_previous', (isset($tags[1]) ? $tags[1] : t('Prev')), $limit, $element, 1, $parameters);
+//   if (empty($li_previous)) {
+//     $li_previous = "&nbsp;";
+//   }
+// 
+//   $li_next = theme('pager_next', (isset($tags[3]) ? $tags[3] : t('Next')), $limit, $element, 1, $parameters);
+//   if (empty($li_next)) {
+//     $li_next = "&nbsp;";
+//   }
+// 
+//   if ($pager_total[$element] > 1) {
+//     $items[] = array(
+//       'class' => 'pager-previous',
+//       'data' => $li_previous,
+//     );
+// 
+//     //$items[] = array(
+//     //  'class' => 'pager-current',
+//     //  'data' => t('@current of @max', array('@current' => $pager_current, '@max' => $pager_max)),
+//     //);
+// 
+//     $items[] = array(
+//       'class' => 'pager-next',
+//       'data' => $li_next,
+//     );
+//     $_page_count = t('@current of @max', array('@current' => $pager_current, '@max' => $pager_max));
+//     return '<div class="ou-paged"><p>Page ' . $_page_count . '</p>' . theme('item_list', $items, NULL, 'ul', array('class' => 'pager'), 'paged') . '</div>';
+//   }
+// }
 
 /**
  * Generate the HTML output for a menu tree

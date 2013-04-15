@@ -1,24 +1,82 @@
 <?php
-// $Id: page.tpl.php,v 3.1 2012/06/29 09:00:00 laustin $
+
 /**
 * @file
-* page.tpl.php default page layout
-* Drupal 6 theme linking OU web standards and OUICE
-* written by Lee Austin - +44 (0)7779 146104
+* Default theme implementation to display the basic html structure of a single
+* Drupal page.
+*
+* Variables:
+* - $css: An array of CSS files for the current page.
+* - $language: (object) The language the site is being displayed in.
+*   $language->language contains its textual representation.
+*   $language->dir contains the language direction. It will either be 'ltr' or 'rtl'.
+* - $rdf_namespaces: All the RDF namespace prefixes used in the HTML document.
+* - $grddl_profile: A GRDDL profile allowing agents to extract the RDF data.
+* - $head_title: A modified version of the page title, for use in the TITLE
+*   tag.
+* - $head_title_array: (array) An associative array containing the string parts
+*   that were used to generate the $head_title variable, already prepared to be
+*   output as TITLE tag. The key/value pairs may contain one or more of the
+*   following, depending on conditions:
+*   - title: The title of the current page, if any.
+*   - name: The name of the site.
+*   - slogan: The slogan of the site, if any, and if there is no title.
+* - $head: Markup for the HEAD section (including meta tags, keyword tags, and
+*   so on).
+* - $styles: Style tags necessary to import all CSS files for the page.
+* - $scripts: Script tags necessary to load the JavaScript files and settings
+*   for the page.
+* - $page_top: Initial markup from any modules that have altered the
+*   page. This variable should always be output first, before all other dynamic
+*   content.
+* - $page: The rendered page content.
+* - $page_bottom: Final closing markup from any modules that have altered the
+*   page. This variable should always be output last, after all other dynamic
+*   content.
+* - $classes String of classes that can be used to style contextually through
+*   CSS.
+*
+* @see template_preprocess()
+* @see template_preprocess_html()
+* @see template_process()
 */
+
 ?>
-<div id="ou-site">
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<?php print $head; ?>
+<title><?php print $head_title; ?></title>
+<?php print $styles; ?>
+<?php //print $scripts; ?>
+<?php  // get the common header elements (This can be called by all page templates)
+include('includes/header.php'); ?>
+</head>
+<body class="ou-mobile <?php print phptemplate_get_body_classes(); ?> <?php print phptemplate_get_faculty_classes(); ?> <?php print phptemplate_get_ia_classes(); ?> <?php print $classes; ?>" <?php print $attributes;?>>
+  <div id="ou-org">
+    <?php  // INCLUDE THE OU HEADER
+    $header_footer_selection = phptemplate_get_ia();
+    if (!empty($header_footer_selection['header'])){
+      include($header_footer_selection['header']);
+    } else {
+      if ($header_footer_selection['header'] != ''){
+        print $header_footer_selection['error'];
+      }
+    }; 
+    ?>
+    <div id="ou-site">
+      <div id="skip-link">
+        <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+      </div>
   <div id="ou-site-header">
-    <?php if ($site_name || $site_slogan){
+    <?php if ($site_name || $site_slogan || $logo){
       print '<div id="ou-site-ident">';
       print ($logo ? '<img class="go2" src="'. check_url($logo) .'" alt="'. $site_name .'" id="logo" />' : "");
-      print '<p id="ou-site-title">'. $site_name .'</p>';
-      print '<p id="ou-site-description">'. $site_slogan .'</p>';
+      print ($site_name ? '<p id="ou-site-title">' . $site_name . '</p>' : '');
+      print ($site_slogan ? '<p id="ou-site-description">'. $site_slogan .'</p>' : '');
       print '</div>';
     }; ?>
-    <!-- Start of site-header -->
-      <?php print ($page['region100'] ? render($page['region100']) : ''); ?>
-    <!-- End of site-header -->
     <?php if ($main_menu || $secondary_menu) {
       print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('ou-sections'))));
     }	
@@ -26,42 +84,35 @@
   </div>
   <div id="ou-site-body">
     <div id="ou-page">
-      <!-- Start of region 0 -->
-        <?php print ($page['region0'] ? '<div id="ou-region0">'.render($page['region0']).'</div>' : ''); ?>
-      <!-- End of region 0 -->
       <!-- Start of region 1 -->
         <div id="ou-region1">
-        <?php 
-          if ($page['help']){
-            print render($page['help']);
-          }
-        ?>
         <div class="ou-content" id="ou-content">
-          <?php if ($tabs): ?><div id="tabs-wrapper" class="clearfix"><?php endif; ?>
-          <?php print $feed_icons ?>
-          <?php print render($title_prefix); ?>
-          <?php if ($title): ?>
-          <h1<?php print $tabs ? ' class="with-tabs"' : '' ?>><?php print $title ?></h1>
-          <?php endif; ?>
-          <?php print render($title_suffix); ?>
-          <?php if ($tabs): ?><?php print render($tabs); ?></div><?php endif; ?>
-          <?php print render($tabs2); ?>
-          <?php print $messages; ?>
-          <?php print render($page['help']); ?>
-          <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-          <?php print render($page['content']); ?>
+          <?php print $content; ?>
         </div>
       </div>
       <!-- End of region 1 -->
-      <!-- Start of region 2 -->
-        <?php print ($page['region2'] ? '<div id="ou-region2">'.render($page['region2']).'</div>' : ''); ?>
-      <!-- End of region 2 -->
-      <!-- Start of region 3 -->
-        <?php print ($page['region3'] ? '<div id="ou-region3">'.render($page['region3']).'</div>' : ''); ?>
-      <!-- End of region 3 -->
     </div>
   </div>
   <div id="ou-site-footer">
     <a href="#ou-content" class="ou-to-top">Back to top</a>
   </div>
+  </div>
+  <?php //Get the page footer and common OU elements
+    $header_footer_selection = phptemplate_get_ia();
+    if (!empty($header_footer_selection['footer'])){
+      include($header_footer_selection['footer']);
+    }
+    else {
+      if ($header_footer_selection['footer'] != ''){
+        print $header_footer_selection['error'];
+      }
+    };
+  if ($page_bottom){
+    print $page_bottom;
+  };
+  ?>
 </div>
+<?php  // get the common header elements (This can be called by all page templates)
+include('includes/footer.php'); ?>
+</body>
+</html>
