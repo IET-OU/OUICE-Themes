@@ -34,7 +34,7 @@ function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['ouice']['body_classes'] = array(
     '#type' => 'checkboxes',
     '#title' => t('Select which OUICE body classes to apply'),
-	  '#default_value' => theme_get_setting('body_classes'),
+    '#default_value' => theme_get_setting('body_classes'),
     '#options' => array(
       'ou-connected' => 'Connected',
       'ou-sections' => 'Sections',
@@ -52,7 +52,7 @@ function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['ouice']['faculty_classes'] = array(
     '#type' => 'radios',
     '#title' => t('Select OU faculty to customise'),
-	  '#default_value' => theme_get_setting('faculty_classes'),
+    '#default_value' => theme_get_setting('faculty_classes'),
     '#options' => array(
       'none' => 'no faculty style selected',
       'ou-arts' => 'Faculty of Arts',
@@ -74,7 +74,7 @@ function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['ouice']['nav_type'] = array(
     '#type' => 'radios',
     '#title' => t('Select OUICE menu type to display'),
-	  '#default_value' => theme_get_setting('nav_type'),
+    '#default_value' => theme_get_setting('nav_type'),
     '#options' => array(
       'ou-full-nav' => 'OUICE full navigation',
       'ou-context-nav' => 'OUICE context navigation',

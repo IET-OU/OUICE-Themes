@@ -52,7 +52,7 @@
  * @see template_preprocess()
  * @see template_preprocess_node()
  */
-//print_r($node);
+// print_r($node);
 ?>
 <!-- start node.tpl.php -->
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
@@ -77,7 +77,7 @@
       hide($content['field_media']);
       hide($content['field_blockquote']);
       hide($content['field_image']);
-      //print (module_exists('oubrand') ? oubrand_replace_ou_tokens_in_node_content($node) : render($content));
+      // print (module_exists('oubrand') ? oubrand_replace_ou_tokens_in_node_content($node) : render($content));
       print (module_exists('oubrand') ? oubrand_views_content($node->nid,render($content)) : render($content));
     ?>
   </div>
