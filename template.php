@@ -62,8 +62,8 @@ function phptemplate_get_ia() {
     $footer_selection = '/var/www/html/includes/footer-09.html';
     break;
   case "intranet" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
+    $header_selection = '/var/www/html/includes/headers-footers/header-intranet-v3.html';
+    $footer_selection = '/var/www/html/includes/headers-footers/footer-intranet-v3.html';
     break;
   case "none" :
     $header_selection = '';
