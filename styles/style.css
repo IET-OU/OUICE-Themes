@@ -19,9 +19,9 @@ div.links ul.links li a {border-bottom:1px solid #EEEEEE;display:inline;padding:
 body.ou-sections.maintenance-page div#ou-page {
   padding: .5em 1.5em;
   margin: 0;
-  background-color: 
+  background-color:
   #fff;
-  border: 1px solid 
+  border: 1px solid
   #bbd8e7;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -121,7 +121,7 @@ tr.draggable {color: #000000;}
 td.content-multiple-drag {width: 12px;}
 /*
 =============================================================================
-	OUICE - WOIL HEADER CREATIVE - QUOTES/STRAPLINE/IMAGE 
+	OUICE - WOIL HEADER CREATIVE - QUOTES/STRAPLINE/IMAGE
 =============================================================================
 */
 #site-header .creative{position:relative;}
@@ -244,7 +244,7 @@ div.ou-violet a.action {background-image:url("../images/arrow-off-violet.gif");}
 /*
 =============================================================================
 	OUICE - MISC
-		
+
 =============================================================================
 */
 #region1 .c1of2 .feature-block h2,
@@ -271,14 +271,14 @@ padding:1em 2em 1em 0;
 /*
 =============================================================================
 	OUICE - feature-block and action-block
-		
+
 =============================================================================
 */
 .feature-block img{margin-top: 1em;}
 /*
 =============================================================================
 	OUICE - news and events
-	
+
 	.news .hsDate {background:url("../images/boxShade.png") repeat-x scroll center bottom #FFFFFF;border-color:#CCCCCC #9C9C9C #828282 #CCCCCC;border-style:solid;border-width:1px;display:block;float:left;margin-left:-4.5em;overflow:hidden;padding:0;text-align:center;width:3.5em;margin-top: 0;}
 	.news .hsDateDay {border-bottom:1px solid #EEEEEE;color:#888888;display:block;font-size:2em;padding:0.3em 0 0.4em;width:100%;}
 	.news .hsDateMonth {display:block;padding:0.1em 0 0.2em;width:100%;}
@@ -288,7 +288,7 @@ padding:1em 2em 1em 0;
 	float:right;
 	margin:0 0 1em 1em;
 	padding:0.5em;
-		
+
 =============================================================================
 */
 .ou-news .ou-date, .ou-events .ou-date {background:url("../images/boxShade.png") repeat-x scroll center bottom #FFFFFF;border-color:#CCCCCC #9C9C9C #828282 #CCCCCC;border-style:solid;border-width:1px;display:block;float:left;margin-left:-4.5em;overflow:hidden;padding:0;text-align:center;width:3.5em;margin-top: 0;}
@@ -302,7 +302,7 @@ ul.ou-events img {
   padding:0.5em;
 }
 ul.ou-events{
-	
+
 }
 ul.ou-events li{
 	list-style-type: none;
@@ -336,7 +336,7 @@ ul.ou-events li{
 /*
 =============================================================================
 	OUICE - feeds
-		
+
 =============================================================================
 */
 .hsRssFeed li {list-stle: none; padding: 0; background: none; border-bottom: 1px solid #ddd; margin-bottom: 1em;}
@@ -353,7 +353,7 @@ ul.hsRssTwitter {padding:0 !important;}
 /*
 =============================================================================
 	OUICE - blockquote, quote, pullquote1, pullquote2
-		
+
 =============================================================================
 */
 .hsPullQuoteOut {float: left; width: 40%; margin: 0.3em 1.5em 0 0; font-size: 1.3em; line-height: 1.4em; font-style: italic; color: #888;}
@@ -364,11 +364,11 @@ ul.hsRssTwitter {padding:0 !important;}
 =============================================================================
 	Override numbering for ordered lists - v3 OUICE only
 	v2 OUICE below:
-	
+
 	#region1 .content ol { counter-reset: item }
 	#region1 .content ol li { display: block }
 	#region1 .content ol li:before { content: counters(item, ".") " "; counter-increment: item }
-	
+
 =============================================================================
 */
 #ou-region1 #ou-content .content ol { counter-reset: item }
@@ -587,7 +587,7 @@ display: none;
                 display: none;
 }*/
 .slideshow .prev.disabled, .slideshow .next.disabled {
- 
+
 }
 .slideshow {
                 position: relative;
@@ -748,7 +748,7 @@ display: none;
                 background: url(esteemimg/slideshow-down-arrow.gif) no-repeat center;
 }
 /*end of slideshow style 2 and 3*/
- 
+
 /*slideshow 4*/
 .slideshow.style4 div.thumbslide{
                 display: inline-block;
@@ -833,8 +833,6 @@ a.ou-action {
   padding: 1em 1.8em 1em 0 !important;
 }
 
-
-
 .caption a {
   color:#ffffff !important;
 }
@@ -846,4 +844,30 @@ a.ou-action {
 
 .more-link {
   padding-bottom: 1em;
+}
+
+/*
+ Override default oEmbed styles.
+ See also - 'remove' PHP: https://gist.github.com/1892457
+*/
+/*div.oembed,*/
+.oembed iframe {
+  margin:0;
+  padding:0;
+  float:none;
+  background:transparent;
+  border:1px solid #ddd;
+  border-radius:0;
+
+  /*max-width:100%;*/
+  width:100%; /*auto*/
+  height:400px; /*auto*/
+}
+.oembed iframe, .oembed .oembed-title, .oembed .oembed-content{
+ border:none;
+}
+
+iframe.ou.video.player.XX-embed-rsp {
+  width:560px;
+  height:315px;
 }
