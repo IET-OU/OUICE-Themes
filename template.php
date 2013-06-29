@@ -483,7 +483,7 @@ function ou_ouice3_menu_link(array $variables) {
 
   $classes_count = count($element['#attributes']['class']);
 	for($i=0;$i<$classes_count;++$i){
-		if($element['#attributes']['class'][$i] == 'expanded'){
+		if($element['#attributes']['class'][$i] == 'expanded' || $element['#attributes']['class'][$i] == 'active-trail'){
 			$element['#attributes']['class'][$i] = 'ou-expanded';
 		}	
 	}
