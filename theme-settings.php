@@ -16,17 +16,23 @@ function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
 
   // Create header and footer form, Forms API
   $form['ouice']['header_choice'] = array(
-    '#type' => 'radios',
+    '#type' => 'select',
     '#title' => t('Select OU header and footer pair to display'),
     '#default_value' => theme_get_setting('header_choice'),
     '#options' => array(
-      'ou-ia-about' => 'About header and footer',
-      'ou-ia-study' => 'Study header and footer',
-      'ou-ia-research' => 'Research header and footer',
-      'ou-ia-community' => 'Community header and footer',
-      'ou-ia-learning' => 'Learning header and footer',
-      'legacy' => 'Legacy header and footer',
-      'none' => 'no header and footer',
+      // Standard OU ICE header selections
+      'OU ICE' => array(
+        'ou-ia-about' => 'About',
+        'ou-ia-study' => 'Study',
+        'ou-ia-research' => 'Research',
+        'ou-ia-community' => 'Community',
+        'ou-ia-learning' => 'Learning',
+      ),
+      'Intranet' => array(
+        'intranet' => 'Default',
+      ),
+      'legacy' => 'Legacy',
+      'none' => 'None',
     ),
   );
 

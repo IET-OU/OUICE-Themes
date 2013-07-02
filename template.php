@@ -62,8 +62,10 @@ function phptemplate_get_ia() {
     $footer_selection = '/var/www/html/includes/footer-09.html';
     break;
   case "intranet" :
-    $header_selection = '/var/www/html/includes/headers-footers/header-intranet-v3.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/footer-intranet-v3.html';
+    //$header_selection = '/opt/drupal/sites/config/www.open.ac.uk.intranet/themes/ou_intranet/header_test/header-intranet.html';
+    //$footer_selection = '/opt/drupal/sites/config/www.open.ac.uk.intranet/themes/ou_intranet/header_test/footer-intranet.html';
+	  $header_selection = '/var/www/html/includes/header-oulife2.html';
+    $footer_selection = '';
     break;
   case "none" :
     $header_selection = '';
