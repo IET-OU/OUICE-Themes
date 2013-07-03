@@ -17,11 +17,11 @@ global $base_url;
 
 function ou_ouice3_preprocess_page(&$variables, $hook) {
    // Page template suggestions based off of content types
-   if (isset($variables['node'])) { 
+   if (isset($variables['node'])) {
     $variables['theme_hook_suggestions'][] = 'page__type__'. $variables['node']->type;
     $variables['theme_hook_suggestions'][] = "page__node__" . $variables['node']->nid;
    }
-   
+
    // Page template suggestions based off URL alias
    if (module_exists('path')) {
     $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
@@ -33,7 +33,7 @@ function ou_ouice3_preprocess_page(&$variables, $hook) {
       }
     }
   }
-   
+
 }
 
 /**
@@ -59,34 +59,25 @@ function phptemplate_get_ia() {
   // Set header and footer paths based on selection made in theme config settings
   // Normal path when on live server is 'includes/xxx'
   switch (theme_get_setting('header_choice')) {
-  case "ou-ia-about" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
-  case "ou-ia-study" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
-  case "ou-ia-research" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
-  case "ou-ia-community" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
-  case "ou-ia-learning" :
-    $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
-    $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
-    break;
   case "legacy" :
     $header_selection = '/var/www/html/includes/header-centre-09.html';
     $footer_selection = '/var/www/html/includes/footer-09.html';
+    break;
+  case "intranet" :
+    //$header_selection = '/opt/drupal/sites/config/www.open.ac.uk.intranet/themes/ou_intranet/header_test/header-intranet.html';
+    //$footer_selection = '/opt/drupal/sites/config/www.open.ac.uk.intranet/themes/ou_intranet/header_test/footer-intranet.html';
+	  $header_selection = '/var/www/html/includes/header-oulife2.html';
+    $footer_selection = '';
     break;
   case "none" :
     $header_selection = '';
     $footer_selection = '';
     break;
+  case "ou-ia-about" :
+  case "ou-ia-study" :
+  case "ou-ia-research" :
+  case "ou-ia-community" :
+  case "ou-ia-learning" :
   default:
     $header_selection = '/var/www/html/includes/headers-footers/ou-header.html';
     $footer_selection = '/var/www/html/includes/headers-footers/ou-footer.html';
@@ -342,13 +333,13 @@ function ou_ouice3_pager($variables) {
   if ($pager_total[$element] > 1) {
     if ($li_first) {
       $items[] = array(
-        'class' => array('ou-first'), 
+        'class' => array('ou-first'),
         'data' => $li_first,
       );
     }
     if ($li_previous) {
       $items[] = array(
-        'class' => array('ou-previous'), 
+        'class' => array('ou-previous'),
         'data' => $li_previous,
       );
     }
@@ -357,7 +348,7 @@ function ou_ouice3_pager($variables) {
     if ($i != $pager_max) {
       if ($i > 1) {
         $items[] = array(
-          'class' => array('pager-ellipsis'), 
+          'class' => array('pager-ellipsis'),
           'data' => '…',
         );
       }
@@ -365,26 +356,26 @@ function ou_ouice3_pager($variables) {
       for (; $i <= $pager_last && $i <= $pager_max; $i++) {
         if ($i < $pager_current) {
           $items[] = array(
-            'class' => array('pager-item'), 
+            'class' => array('pager-item'),
             'data' => theme('pager_previous', array('text' => $i, 'element' => $element, 'interval' => ($pager_current - $i), 'parameters' => $parameters)),
           );
         }
         if ($i == $pager_current) {
           $items[] = array(
-            'class' => array('pager-current'), 
-            'data' => $i,
+            'class' => array('pager-current'),
+            'data' => '<strong>'.$i.'</strong>' // Ensures that the pager displays correctly for OU ICE. This might want to be themed seperately so it can be changed by other modules?
           );
         }
         if ($i > $pager_current) {
           $items[] = array(
-            'class' => array('pager-item'), 
+            'class' => array('pager-item'),
             'data' => theme('pager_next', array('text' => $i, 'element' => $element, 'interval' => ($i - $pager_current), 'parameters' => $parameters)),
           );
         }
       }
       if ($i < $pager_max) {
         $items[] = array(
-          'class' => array('pager-ellipsis'), 
+          'class' => array('pager-ellipsis'),
           'data' => '…',
         );
       }
@@ -392,20 +383,20 @@ function ou_ouice3_pager($variables) {
     // End generation.
     if ($li_next) {
       $items[] = array(
-        'class' => array('ou-next'), 
+        'class' => array('ou-next'),
         'data' => $li_next,
       );
     }
     if ($li_last) {
       $items[] = array(
-        'class' => array('ou-last'), 
+        'class' => array('ou-last'),
         'data' => $li_last,
       );
     }
     $_page_count = t('@current of @max', array('@current' => $pager_current, '@max' => $pager_max));
     return '<div class="ou-paged"><p>' . $_page_count . '</p>' . theme('item_list', array('items' => $items, 'attributes' => array('class' => array('pager')),)) . '</div>';
 	// return '<h2 class="element-invisible">' . t('Pages') . '</h2>' . theme('item_list', array(
-	//       'items' => $items, 
+	//       'items' => $items,
 	//       'attributes' => array('class' => array('pager')),
 	//     ));
   }
@@ -485,7 +476,7 @@ function ou_ouice3_menu_link(array $variables) {
 	for($i=0;$i<$classes_count;++$i){
 		if($element['#attributes']['class'][$i] == 'expanded'){
 			$element['#attributes']['class'][$i] = 'ou-expanded';
-		}	
+		}
 	}
 
   if ($element['#below']) {

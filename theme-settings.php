@@ -8,27 +8,39 @@
  * customized by user themes.
  */
 function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
+  // OU ICE settings fieldset
+  $form['ouice'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('OU ICE Settings'),
+  );
+
   // Create header and footer form, Forms API
-  $form['header_choice'] = array(
-    '#type' => 'radios',
+  $form['ouice']['header_choice'] = array(
+    '#type' => 'select',
     '#title' => t('Select OU header and footer pair to display'),
     '#default_value' => theme_get_setting('header_choice'),
     '#options' => array(
-      'ou-ia-about' => 'About header and footer',
-      'ou-ia-study' => 'Study header and footer',
-      'ou-ia-research' => 'Research header and footer',
-      'ou-ia-community' => 'Community header and footer',
-      'ou-ia-learning' => 'Learning header and footer',
-      'legacy' => 'Legacy header and footer',
-      'none' => 'no header and footer',
+      // Standard OU ICE header selections
+      'OU ICE' => array(
+        'ou-ia-about' => 'About',
+        'ou-ia-study' => 'Study',
+        'ou-ia-research' => 'Research',
+        'ou-ia-community' => 'Community',
+        'ou-ia-learning' => 'Learning',
+      ),
+      'Intranet' => array(
+        'intranet' => 'Default',
+      ),
+      'legacy' => 'Legacy',
+      'none' => 'None',
     ),
   );
 
   // Create body classes form, Forms API
-  $form['body_classes'] = array(
+  $form['ouice']['body_classes'] = array(
     '#type' => 'checkboxes',
     '#title' => t('Select which OUICE body classes to apply'),
-	  '#default_value' => theme_get_setting('body_classes'),
+    '#default_value' => theme_get_setting('body_classes'),
     '#options' => array(
       'ou-connected' => 'Connected',
       'ou-sections' => 'Sections',
@@ -43,10 +55,10 @@ function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
   );
 
   // Create faculty classes form, Forms API
-  $form['faculty_classes'] = array(
+  $form['ouice']['faculty_classes'] = array(
     '#type' => 'radios',
     '#title' => t('Select OU faculty to customise'),
-	  '#default_value' => theme_get_setting('faculty_classes'),
+    '#default_value' => theme_get_setting('faculty_classes'),
     '#options' => array(
       'none' => 'no faculty style selected',
       'ou-arts' => 'Faculty of Arts',
@@ -65,10 +77,10 @@ function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
   );
 
   // Create menu type Forms API
-  $form['nav_type'] = array(
+  $form['ouice']['nav_type'] = array(
     '#type' => 'radios',
     '#title' => t('Select OUICE menu type to display'),
-	  '#default_value' => theme_get_setting('nav_type'),
+    '#default_value' => theme_get_setting('nav_type'),
     '#options' => array(
       'ou-full-nav' => 'OUICE full navigation',
       'ou-context-nav' => 'OUICE context navigation',

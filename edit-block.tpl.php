@@ -7,8 +7,8 @@
  * customized by user themes.
  */
 // $Id: edit-block.tpl.php,v 3.1 2012/06/29 09:00:00 laustin (07779 146104) $
-//print_r($block->module);
-//print_r($block->delta);
+// print_r($block->module);
+// print_r($block->delta);
 ?>
 <!-- start edit-block.tpl.php -->
 <?php
