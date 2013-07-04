@@ -236,7 +236,6 @@ function ou_ouice3_item_list($variables) {
   // Only output the list container and title, if there are any list items.
   // Check to see whether the block title exists before adding a header.
   // Empty headers are not semantic and present accessibility challenges.
-  //$output = '<div class="item-list">';
   if (isset($title) && $title !== '') {
     $output .= '<h3>' . $title . '</h3>';
   }
@@ -395,60 +394,8 @@ function ou_ouice3_pager($variables) {
     }
     $_page_count = t('@current of @max', array('@current' => $pager_current, '@max' => $pager_max));
     return '<div class="ou-paged"><p>' . $_page_count . '</p>' . theme('item_list', array('items' => $items, 'attributes' => array('class' => array('pager')),)) . '</div>';
-	// return '<h2 class="element-invisible">' . t('Pages') . '</h2>' . theme('item_list', array(
-	//       'items' => $items,
-	//       'attributes' => array('class' => array('pager')),
-	//     ));
   }
 }
-
-/* Standard view mini pager function with the addtions of label changes and a dive wrapping
- *
- * DELETE
- *
- */
-// function ssphptemplate_views_mini_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
-//   global $pager_page_array, $pager_total;
-// 
-//   // Calculate various markers within this pager piece:
-//   // Middle is used to "center" pages around the current page.
-//   $pager_middle = ceil($quantity / 2);
-//   // current is the page we are currently paged to
-//   $pager_current = $pager_page_array[$element] + 1;
-//   // max is the maximum page number
-//   $pager_max = $pager_total[$element];
-//   // End of marker calculations.
-// 
-// 
-//   $li_previous = theme('pager_previous', (isset($tags[1]) ? $tags[1] : t('Prev')), $limit, $element, 1, $parameters);
-//   if (empty($li_previous)) {
-//     $li_previous = "&nbsp;";
-//   }
-// 
-//   $li_next = theme('pager_next', (isset($tags[3]) ? $tags[3] : t('Next')), $limit, $element, 1, $parameters);
-//   if (empty($li_next)) {
-//     $li_next = "&nbsp;";
-//   }
-// 
-//   if ($pager_total[$element] > 1) {
-//     $items[] = array(
-//       'class' => 'pager-previous',
-//       'data' => $li_previous,
-//     );
-// 
-//     //$items[] = array(
-//     //  'class' => 'pager-current',
-//     //  'data' => t('@current of @max', array('@current' => $pager_current, '@max' => $pager_max)),
-//     //);
-// 
-//     $items[] = array(
-//       'class' => 'pager-next',
-//       'data' => $li_next,
-//     );
-//     $_page_count = t('@current of @max', array('@current' => $pager_current, '@max' => $pager_max));
-//     return '<div class="ou-paged"><p>Page ' . $_page_count . '</p>' . theme('item_list', $items, NULL, 'ul', array('class' => 'pager'), 'paged') . '</div>';
-//   }
-// }
 
 /**
  * Generate the HTML output for a menu tree

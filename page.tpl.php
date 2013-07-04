@@ -3,11 +3,11 @@
 /**
 * @file
 * page.tpl.php default page layout
-* Drupal 6 theme linking OU web standards and OUICE
+* Drupal 7 theme linking OU web standards and OUICE
 * written by Lee Austin - +44 (0)7779 146104
 */
 ?>
-<!-- <div id="ou-site"> //-->
+
   <div id="ou-site-header">
     <?php if ($site_name || $site_slogan || $logo){
       print '<div id="ou-site-ident">';
@@ -64,4 +64,3 @@
   <div id="ou-site-footer">
     <a href="#ou-content" class="ou-to-top">Back to top</a>
   </div>
-<!-- </div> //-->
