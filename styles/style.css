@@ -371,9 +371,9 @@ ul.hsRssTwitter {padding:0 !important;}
 	
 =============================================================================
 */
-#ou-region1 #ou-content .content ol { counter-reset: item }
-#ou-region1 #ou-content .content ol li { display: block }
-#ou-region1 #ou-content .content ol li:before { content: counters(item, ".") " "; counter-increment: item }
+#ou-region1 #ou-content .content ol.word-style { counter-reset: item }
+#ou-region1 #ou-content .content ol.word-style li { display: block }
+#ou-region1 #ou-content .content ol.word-style li:before { content: counters(item, ".") " "; counter-increment: item }
 
 
 .ou-go0, .ou-go1, .ou-go2, .ou-go3 {
