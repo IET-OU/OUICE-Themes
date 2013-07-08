@@ -210,10 +210,12 @@ function ou_ouice3_easy_breadcrumb($variables) {
   if ($segments_quantity > 0) {
     $html .= '<ol class="ou-ancestors">';
     for ($i = 0, $s = $segments_quantity - 1; $i < $segments_quantity; ++$i) {
-      $html .= '<li>' . $breadcrumb[$i] . '</li>';
+      $html .= '<li>' . $breadcrumb[$i];
       if ($i < $s) {
         $html .= '' . $separator . '';
       }
+      
+      $html .= '</li>';
     }
     $html .= '</ol>';
   }
