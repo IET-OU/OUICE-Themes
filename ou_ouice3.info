@@ -1,7 +1,7 @@
-name = 'OUICEv3.x D7 v1.0.1 - (The Open University)'
+name = 'OUICEv3.x D7 v1.0.3 - (The Open University)'
 description = 'OUICEv3.x D7 v1.0 Parent Drupal Theme'
 package = Core
-version = '1.0.2'
+version = '1.0.3'
 screenshot = 'screenshot.png'
 core = '7.x'
 
