@@ -89,6 +89,19 @@ function phptemplate_get_ia() {
     'error' => '<div>ERROR: No Header or footer selection found. Go to theme settings and select a header/footer pair to display</div>'
   );
 }
+
+/**
+ * THEME SETTINGS
+ * Return render main_menu selection made in theme-settings.
+ * @param
+ * @return a string containing the whether to render nav or not
+ */
+function phptemplate_get_render_mainmenu() {
+  $render_mainmenu = '';
+  $render_mainmenu .= theme_get_setting('mainmenu');
+  return $render_mainmenu;
+}
+
 /**
  * THEME SETTINGS
  * Return body classes selection made in theme-settings.

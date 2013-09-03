@@ -871,3 +871,13 @@ iframe.ou.video.player.XX-embed-rsp {
   width:560px;
   height:315px;
 }
+
+
+
+/* Fix for cutoff in footer */
+
+.ou-title {
+  display: block;
+  font-size: 1.2em;
+  margin-top:0.2em;
+}

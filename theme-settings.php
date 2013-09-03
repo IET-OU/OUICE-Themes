@@ -27,12 +27,23 @@ function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
         'ou-ia-research' => 'Research',
         'ou-ia-community' => 'Community',
         'ou-ia-learning' => 'Learning',
+        '' => 'No IA',
       ),
       'Intranet' => array(
         'intranet' => 'Default',
       ),
       'legacy' => 'Legacy',
       'none' => 'None',
+    ),
+  );
+
+  // Create body classes form, Forms API
+  $form['ouice']['mainmenu'] = array(
+    '#type' => 'checkboxes',
+    '#title' => t('Select whether to render $main_menu'),
+    '#default_value' => theme_get_setting('mainmenu'),
+    '#options' => array(
+      '1' => 'Render $main_menu',
     ),
   );
 

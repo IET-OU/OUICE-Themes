@@ -19,9 +19,16 @@
     <!-- Start of site-header -->
       <?php print ($page['region100'] ? render($page['region100']) : ''); ?>
     <!-- End of site-header -->
-    <?php if ($main_menu || $secondary_menu) {
-      print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('ou-sections'))));
-    }	
+    <?php if(phptemplate_get_render_mainmenu() === '1'){
+      if ($main_menu || $secondary_menu) {
+        print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('ou-sections'))));
+      } 
+    }
+    ?>
+    <?php 
+    //if ($main_menu || $secondary_menu) {
+      //print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('ou-sections'))));
+    //} 
     ?>
   </div>
   <div id="ou-site-body">

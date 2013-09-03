@@ -1,7 +1,7 @@
-name = 'OUICEv3.x D7 v1.0.3 - (The Open University)'
+name = 'OUICEv3.x D7 v1.0.4 - (The Open University)'
 description = 'OUICEv3.x D7 v1.0 Parent Drupal Theme'
 package = Core
-version = '1.0.3'
+version = '1.0.4'
 screenshot = 'screenshot.png'
 core = '7.x'
 
@@ -27,7 +27,7 @@ settings[body_classes][] = ou-sections
 settings[faculty_classes] = none
 settings[nav_type] = ou-context-nav
 
-; $Id: ou_ouice3.info : v 1.0.1 2012/02/18  laustin $
+; $Id: ou_ouice3.info : v 1.0.4 2013/09/03  laustin $
 version = "7.14"
 project = "drupal"
 datestamp = "1335997555"
