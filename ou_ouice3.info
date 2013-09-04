@@ -6,6 +6,7 @@ screenshot = 'screenshot.png'
 core = '7.x'
 
 stylesheets[screen][] = styles/style.css
+stylesheets[screen][] = styles/maintenance.css
 scripts[] = scripts/ouice3-theme.js
 regions[region100] = 'SiteHeader'
 regions[region0] = 'Region0'
