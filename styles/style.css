@@ -79,7 +79,7 @@ div.administer-block-links:hover a {
 
 div.administer-block-links-hover,
 div.administer-block-links:hover {
-  background: transparent;;
+  background: transparent;
 }
 
 div.administer-block-links a:before {
@@ -881,3 +881,15 @@ iframe.ou.video.player.XX-embed-rsp {
   font-size: 1.2em;
   margin-top:0.2em;
 }
+
+/* Fix for page-title only */
+#ou-site-ident {
+  margin-bottom:1em;  
+}
+#ou-site-description {
+  margin:0;
+}
+
+
+
+
