@@ -486,4 +486,32 @@ function ou_ouice3_preprocess_html(&$variables) {
   if(drupal_is_front_page()) {
     $variables['classes_array'][] = 'has-sc';
   }
+
+  drupal_add_css(drupal_get_path('theme', 'ou_ouice3') . '/styles/style_ie8.css', array(
+    'group' => CSS_THEME,
+    'browsers' => array(
+      'IE' => 'IE 8',
+      '!IE' => FALSE
+      ),
+    'preprocess' => FALSE
+  ));
+  drupal_add_css(drupal_get_path('theme', 'ou_ouice3') . '/styles/style_ie6.css', array(
+    'group' => CSS_THEME,
+    'browsers' => array(
+      'IE' => 'IE 6',
+      '!IE' => FALSE
+      ),
+    'preprocess' => FALSE
+  ));
+  drupal_add_css(drupal_get_path('theme', 'ou_ouice3') . '/styles/style_ie7.css', array(
+    'group' => CSS_THEME,
+    'browsers' => array(
+      'IE' => 'IE 7',
+      '!IE' => FALSE
+      ),
+    'preprocess' => FALSE
+  ));
+
+
+
 }
