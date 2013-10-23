@@ -13,10 +13,10 @@
 ?>
 <!-- start block.tpl.php -->
 <?php 
-//print '<div class="block ou-box">';
+//print '<div class="ou-box">';
 include('edit-block.tpl.php');
 if ($block->subject){
-	print '<h2>'.$block->subject.'</h2>';
+	print 'ssss<h2>'.$block->subject.'</h2>';
 }
 print '<div class="content">';
 print $content;

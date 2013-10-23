@@ -19,23 +19,17 @@
     <!-- Start of site-header -->
       <?php print ($page['region100'] ? render($page['region100']) : ''); ?>
     <!-- End of site-header -->
-    <?php if(phptemplate_get_render_mainmenu() === '1'){
-      if ($main_menu || $secondary_menu) {
-        print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('ou-sections'))));
-      } 
-    }
-    ?>
     <?php 
-    //if ($main_menu || $secondary_menu) {
-      //print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('ou-sections'))));
-    //} 
+    if ($main_menu || $secondary_menu) {
+      print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('ou-sections'))));
+    } 
     ?>
   </div>
   <div id="ou-site-body">
     <div id="ou-page">
     <!-- Start of region 0 -->
       <?php print ($page['region0'] ? '<div id="ou-region0">'.render($page['region0']).'</div>' : ''); ?>
-    <!-- End of region 0 --
+    <!-- End of region 0 -->
     <!-- Start of region 1 -->
     <div id="ou-region1">
       <?php 
