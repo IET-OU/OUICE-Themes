@@ -339,7 +339,7 @@ ul.ou-events li{
 
 =============================================================================
 */
-.hsRssFeed li {list-stle: none; padding: 0; background: none; border-bottom: 1px solid #ddd; margin-bottom: 1em;}
+.hsRssFeed li {list-style: none; padding: 0; background: none; border-bottom: 1px solid #ddd; margin-bottom: 1em;}
 .hsRssFeed li:last-child {border: 0; margin: 0;}
 .hsRssIcon {position: relative; top: 2px; float: right; display: block; width: 16px; height: 16px; background: url(../images/rssIcon.gif) 50% 50% no-repeat; text-indent: -9999px; padding: 0 !important;}
 .hsRssFeed dt {padding: 0 4px;}
