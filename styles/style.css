@@ -807,30 +807,71 @@ a.ou-action {
   padding-bottom: 1em;
 }
 
+
 /*
- Override default oEmbed styles.
+ oEmbed - override default oEmbed styles.
  See also - 'remove' PHP: https://gist.github.com/1892457
 */
-/*div.oembed,*/
-.oembed iframe {
-  margin:0;
-  padding:0;
-  float:none;
-  background:transparent;
-  border:1px solid #ddd;
-  border-radius:0;
-
-  /*max-width:100%;*/
-  width:100%; /*auto*/
-  height:400px; /*auto*/
+#ou-org .oembed {
+  display: inline-block;
+  margin: .6em 0; /* OR, margin: 1em 0; */
+  padding: 0;
+  float: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
-.oembed iframe, .oembed .oembed-title, .oembed .oembed-content{
- border:none;
+#ou-org .oembed iframe {
+  border: none;
+  max-width: 100%;
+  min-width: 360px; /* 270px */
+}
+/*#ou-org .ou-embed, #ou-org .oembed iframe, .oembed .oembed-content {
+  background: none;
+  border: none;
+  padding: 0;
+}*/
+#ou-org .oembed .oembed-title {
+  display: none;
 }
 
-iframe.ou.video.player.XX-embed-rsp {
-  width:560px;
-  height:315px;
+/* OU Media Player - default size video player.
+*/
+#ou-org .oembed iframe.ou.video.player.size-default {
+  width: 560px;
+  height: 337px;  /* Needs checking!! 315px */
+}
+iframe.ou.video.player {
+  max-width: 848px;
+  max-height: 480px;
+}
+
+/* OU Media Player - small player(s) in OUICE region 2/sidebar.
+*/
+#ou-org #ou-region2 iframe.ou.player {
+  min-width: 185px;
+  height: 132px; /* based on 193.8px width => 109px */
+}
+
+/* OU Media Player - audio.
+*/
+
+/* Non-OUICE - audio player with banner. */
+iframe.ou.audio.player {
+  width: 100%;
+  min-width: 270px;
+  max-width: 360px;
+  height: 90px;
+}
+/* OUICE - audio player NO banner. */
+#ou-org #ou-site iframe.ou.audio.player {
+  width: 100%;
+  min-width: 270px;
+  max-width: 360px;
+  height: 22px;
+}
+#ou-org #ou-region2 iframe.ou.audio.player {
+  min-width: 185px;
 }
 
 
