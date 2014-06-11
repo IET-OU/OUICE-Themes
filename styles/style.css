@@ -813,7 +813,7 @@ a.ou-action {
  See also - 'remove' PHP: https://gist.github.com/1892457
 */
 #ou-org .oembed {
-  display: inline-block;
+  display: block;
   margin: .6em 0; /* OR, margin: 1em 0; */
   padding: 0;
   float: none;
@@ -861,15 +861,21 @@ iframe.ou.audio.player {
   width: 100%;
   min-width: 270px;
   max-width: 360px;
-  height: 90px;
+  height: 85px;
 }
 /* OUICE - audio player NO banner. */
-#ou-org #ou-site iframe.ou.audio.player {
+#ou-org #ou-site iframe.ou.audio.player,
+iframe.ou.audio.player.no-banner {
   width: 100%;
   min-width: 270px;
   max-width: 360px;
   height: 22px;
 }
+/* OUICE - audio player explicit YES banner. */
+#ou-org #ou-site iframe.ou.audio.player.yes-banner {
+  height: 85px;
+}
+/* Wee, small audio player in region 2. */
 #ou-org #ou-region2 iframe.ou.audio.player {
   min-width: 185px;
 }
