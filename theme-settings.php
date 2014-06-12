@@ -38,6 +38,16 @@ function ou_ouice3_form_system_theme_settings_alter(&$form, &$form_state) {
   );
 
   // Create body classes form, Forms API
+  $form['ouice']['mainmenu'] = array(
+    '#type' => 'checkboxes',
+    '#title' => t('Select whether to render $main_menu'),
+    '#default_value' => theme_get_setting('mainmenu'),
+    '#options' => array(
+      '1' => 'Render $main_menu',
+    ),
+  );
+
+  // Create body classes form, Forms API
   $form['ouice']['body_classes'] = array(
     '#type' => 'checkboxes',
     '#title' => t('Select which OUICE body classes to apply'),
