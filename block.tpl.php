@@ -16,7 +16,7 @@
 //print '<div class="ou-box">';
 include('edit-block.tpl.php');
 if ($block->subject){
-	print 'ssss<h2>'.$block->subject.'</h2>';
+	print '<h2>'.$block->subject.'</h2>';
 }
 print '<div class="content">';
 print $content;
