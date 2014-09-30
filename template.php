@@ -202,22 +202,36 @@ function ou_ouice3_easy_breadcrumb($variables) {
   $segments_quantity = $variables['segments_quantity'];
   $separator = $variables['separator'];
 
+  $breadcrumb[0]['content'] = variable_get('site_name', 'Home');
+  $breadcrumb[0]['url'] = url('');
+  $breadcrumb[]['content'] = drupal_get_title(); // apend the current page title
+
   $html = '';
 
-  $get_site_name = variable_get('site_name', "Default site name");
-  $breadcrumb[] = drupal_get_title();
-  $breadcrumb[0] = l(($get_site_name ? $get_site_name : "Home"), NULL);
-
   if ($segments_quantity > 0) {
+
     $html .= '<ol class="ou-ancestors">';
+
     for ($i = 0, $s = $segments_quantity - 1; $i < $segments_quantity; ++$i) {
-      $html .= '<li>' . $breadcrumb[$i];
-      if ($i < $s) {
-        $html .= '' . $separator . '';
+      $it = $breadcrumb[$i];
+      $content = decode_entities($it['content']);
+
+      $html .= '<li>';
+
+      if (isset($it['url'])) {
+        $html .= l($content, $it['url'], array('attributes' => array('class' => $it['class'])));
+      } else {
+        $class = implode(' ', $it['class']);
+        $html .= '<span class="' . $class . '">'  . check_plain($content) . '</span>';
       }
-      
+
+      if ($i < $s) {
+        $html .= $separator;
+      }
+
       $html .= '</li>';
     }
+    
     $html .= '</ol>';
   }
 
