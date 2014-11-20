@@ -202,10 +202,6 @@ function ou_ouice3_easy_breadcrumb($variables) {
   $segments_quantity = $variables['segments_quantity'];
   $separator = $variables['separator'];
 
-  $breadcrumb[0]['content'] = variable_get('site_name', 'Home');
-  $breadcrumb[0]['url'] = url('');
-  $breadcrumb[]['content'] = drupal_get_title(); // apend the current page title
-
   $html = '';
 
   if ($segments_quantity > 0) {
