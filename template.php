@@ -202,6 +202,9 @@ function ou_ouice3_easy_breadcrumb($variables) {
   $segments_quantity = $variables['segments_quantity'];
   $separator = $variables['separator'];
 
+  // Set the default breadcrumb to the Site name unless this has been overridden
+  $breadcrumb[0]['content'] = ( $breadcrumb[0]['content'] == 'Home' ? variable_get('site_name', 'Home') : $breadcrumb[0]['content']);
+
   $html = '';
 
   if ($segments_quantity > 0) {
